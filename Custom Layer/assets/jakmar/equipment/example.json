@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "jakmar:example"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "jakmar:example"
+      }
+    ]
+  }
+}

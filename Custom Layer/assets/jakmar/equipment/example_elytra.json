@@ -1,0 +1,9 @@
+{
+    "layers": {
+        "wings": [
+            {
+                "texture": "jakmar:example_elytra"
+            }
+        ]
+    }
+}
