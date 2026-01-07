@@ -10,8 +10,8 @@
 
 ## Resourcepacki
 
-* [Glyphs](resourcepacki/editor.md)
-* [Equipment](resourcepacki/markdown.md)
+* [Glyphs](resourcepacki/glyphs.md)
+* [Equipment](resourcepacki/equipment.md)
 
 ## Przydatne
 

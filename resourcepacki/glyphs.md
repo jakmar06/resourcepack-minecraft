@@ -1,29 +1,11 @@
 ---
+description: >-
+  W tej części poradnika dowiesz się, jak tworzyć własne customowe gui, prefixy
+  oraz emotki za pomocą resourepacka
 icon: icons
-layout:
-  width: default
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
-metaLinks:
-  alternates:
-    - https://app.gitbook.com/s/yE16Xb3IemPxJWydtPOj/basics/editor
 ---
 
 # Glyphs
-
-## 📖 Jak zrobić **custom prefixy** na serwerze Minecraft za pomocą Resource Packa?
-
-Dobra wiadomość – to jest **bardzo proste**, zrobisz to w **maksymalnie 5 minut**, a co najważniejsze – **nie potrzebujesz do tego żadnego pluginu**!
 
 ***
 

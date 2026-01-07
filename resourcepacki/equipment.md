@@ -3,27 +3,6 @@ description: >-
   W tej części poradnika dowiesz się, jak tworzyć własne modele dla layeru zbroi
   i elytry dla gracza oraz jak implementować niestandardowe zbroje dla mobów.
 icon: helmet-battle
-coverY: 0
-layout:
-  width: default
-  cover:
-    visible: true
-    size: full
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
-metaLinks:
-  alternates:
-    - https://app.gitbook.com/s/yE16Xb3IemPxJWydtPOj/basics/markdown
 ---
 
 # Equipment
