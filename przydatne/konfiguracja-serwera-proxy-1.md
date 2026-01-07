@@ -2,10 +2,11 @@
 description: >-
   Poradnik, dzięki któremu w bezpieczny sposób skonfigurujesz serwer proxy w
   celu połączenia kilku serwerów Minecraft.
-icon: paper-plane
+hidden: true
+icon: network-wired
 ---
 
-# Proxy
+# Konfiguracja Serwera Proxy
 
 {% embed url="https://github.com/Helios3991/konfiguracja-serwera-proxy" %}
 Link do oryginalnego poradniaka
