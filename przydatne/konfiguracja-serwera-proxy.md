@@ -1,10 +1,8 @@
 ---
 description: >-
-  Poradnik ten został napisany pod najnowsze wersje silników Paper oraz Velocity
-  i jest aktywnie rozwijany. Jeśli korzystasz ze starszych wersji któregoś z
-  tych silników, konfiguracja może się różnić.
+  Poradnik, dzięki któremu w bezpieczny sposób skonfigurujesz serwer proxy w
+  celu połączenia kilku serwerów Minecraft.
 icon: network-wired
-coverY: 0
 ---
 
 # Konfiguracja Serwera Proxy
@@ -12,6 +10,10 @@ coverY: 0
 {% embed url="https://github.com/Helios3991/konfiguracja-serwera-proxy" %}
 Link do oryginalnego poradniaka
 {% endembed %}
+
+Poradnik ten został napisany pod najnowsze wersje silników Paper oraz Velocity i jest aktywnie rozwijany. Jeśli korzystasz ze starszych wersji któregoś z tych silników, konfiguracja może się różnić.
+
+
 
 ## 0. Dlaczego Velocity?
 
