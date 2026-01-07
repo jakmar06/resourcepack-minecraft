@@ -16,4 +16,3 @@
 ## Przydatne
 
 * [Konfiguracja Serwera Proxy](przydatne/konfiguracja-serwera-proxy.md)
-* [Konfiguracja Serwera Proxy](przydatne/konfiguracja-serwera-proxy-1.md)
