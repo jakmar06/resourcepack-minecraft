@@ -4,6 +4,10 @@
 
 * [Czym jest księga Minecraft?](README.md)
 
+## Pluginy
+
+* [Lista Popularnych pluginów](pluginy/lista-popularnych-pluginow.md)
+
 ## Resourcepacki
 
 * [Glyphs](resourcepacki/editor.md)
