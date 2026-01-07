@@ -2,6 +2,7 @@
 description: >-
   Poradnik, dzięki któremu w bezpieczny sposób skonfigurujesz serwer proxy w
   celu połączenia kilku serwerów Minecraft.
+hidden: true
 icon: network-wired
 ---
 
