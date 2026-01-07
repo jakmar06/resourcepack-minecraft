@@ -1,4 +1,28 @@
-# Poradniki do resourcepacków:
+---
+icon: hand-wave
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+metaLinks:
+  alternates:
+    - https://app.gitbook.com/s/yE16Xb3IemPxJWydtPOj/
+---
 
-1. Glyphs (Custom GUI, Rangi, Emotki): [Kliknij](https://github.com/jakmar06/glyphs-minecraft/wiki/Glyphs-(Custom-GUI,-Rangi,-Emotki))
-2. Equipment ( model dla zbroi i elytry ): [Kliknij](https://github.com/jakmar06/resourcepack-minecraft/wiki/Equipment-(-model-dla-zbroi-i-elytry-))
+# Czego się nauczę na stronie?
+
+Welcome to the GitBook starter template! Here you'll get an overview of all the amazing features GitBook offers to help you build beautiful, interactive documentation.
+
+You'll see some of the best parts of GitBook in action — and find help on how you can turn this template into your
+
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h4><i class="fa-bolt">:bolt:</i></h4></td><td><strong>Quickstart</strong></td><td>Create your first site</td><td></td><td></td><td></td><td><a href="getting-started/quickstart.md">quickstart.md</a></td></tr><tr><td><h4><i class="fa-leaf">:leaf:</i></h4></td><td><strong>Editor basics</strong></td><td>Learn the basics of GitBook</td><td></td><td></td><td></td><td><a href="https://github.com/GitbookIO/gitbook-templates/blob/main/product-docs/broken-reference/README.md">https://github.com/GitbookIO/gitbook-templates/blob/main/product-docs/broken-reference/README.md</a></td></tr><tr><td><h4><i class="fa-globe-pointer">:globe-pointer:</i></h4></td><td><strong>Publish your docs</strong></td><td>Share your docs online</td><td></td><td></td><td></td><td><a href="/broken/pages/QPzbTvC6XsT5gERiU43E">Broken link</a></td></tr></tbody></table>
