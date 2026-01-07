@@ -192,4 +192,6 @@ Kiedyś sporym minusem Velocity były małe ilości pluginów, jednak aktualnie 
 * [EnhancedVelocity](https://modrinth.com/plugin/enhancedvelocity) - Posiada małe funkcje typu Quality of Life.
 * [VLobby](https://modrinth.com/plugin/vlobby) - Dodaje komendę /lobby.
 
+{% hint style="info" %}
 Staraj się trzymać na proxy jedynie niezbędne pluginy. Velocity jest bardzo lekki, lecz pluginy już niekoniecznie.
+{% endhint %}
