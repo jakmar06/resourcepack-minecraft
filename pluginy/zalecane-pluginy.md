@@ -148,7 +148,7 @@ Wymagania:
 11. CrazyCrates - [https://modrinth.com/plugin/crazycrates](https://modrinth.com/plugin/crazycrates)
 
 {% hint style="info" %}
-Aktywnie  rozwijany plugin do tworzenia skrzynek z nagrodami.
+Aktywnie rozwijany plugin do tworzenia skrzynek z nagrodami.
 {% endhint %}
 
 {% hint style="warning" %}
@@ -161,15 +161,98 @@ Wymagania:&#x20;
 12. ExcellentCrates - [https://modrinth.com/plugin/excellentcrates](https://modrinth.com/plugin/excellentcrates)
 
 {% hint style="info" %}
-Aktywnie  rozwijany plugin do tworzenia skrzynek z nagrodami z łatwiejszą konfiguracją.
+Aktywnie rozwijany plugin do tworzenia skrzynek z nagrodami z łatwiejszą konfiguracją.
 {% endhint %}
 
 {% hint style="warning" %}
 Wymagania:
 
-* [https://modrinth.com/plugin/nightcore](https://modrinth.com/plugin/nightcore)
 * Minimalna wersja serwera: 1.21.8
 * Java 21
+* [https://modrinth.com/plugin/nightcore](https://modrinth.com/plugin/nightcore)
 * Opcjonalnie [https://modrinth.com/plugin/packetevents](https://modrinth.com/plugin/packetevents)
+{% endhint %}
+
+13. FancyNpcs - [https://modrinth.com/plugin/fancynpcs/versions](https://modrinth.com/plugin/fancynpcs/versions)
+
+{% hint style="info" %}
+Plugin do tworzenia npc, używanych np. do przenioszenia na serwer na lobby, czy do otwierania gui.
+{% endhint %}
+
+{% hint style="warning" %}
+Wymagania:&#x20;
+
+* Minimalna wersja serwera 1.21
+* Java 21
+{% endhint %}
+
+14. ZnpcsPlus2 - [https://modrinth.com/plugin/znpcsplus](https://modrinth.com/plugin/znpcsplus) lub [https://ci.pyr.lol/job/ZNPCsPlus/](https://ci.pyr.lol/job/ZNPCsPlus/)
+
+{% hint style="info" %}
+Plugin do tworzenia npc, używanych np. do przenioszenia na serwer na lobby, czy do otwierania gui.
+{% endhint %}
+
+{% hint style="warning" %}
+Wymagania:
+
+* Minimalna wersja serwera 1.8
+* Java 8
+{% endhint %}
+
+{% hint style="danger" %}
+Minusy pluginu:&#x20;
+
+* Brak kompatybilności z dużą częścią pluginów: np mythicmobs
+{% endhint %}
+
+15. Citziens - [https://ci.citizensnpcs.co/job/Citizens2/](https://ci.citizensnpcs.co/job/Citizens2/)
+
+{% hint style="info" %}
+Plugin do tworzenia npc, używanych np. do przenioszenia na serwer na lobby, czy do otwierania gui.
+{% endhint %}
+
+{% hint style="warning" %}
+Wymagania:&#x20;
+
+* Minimalna wersja serwera 1.21.11
+* Java 21
+{% endhint %}
+
+{% hint style="danger" %}
+Miniusy pluginu:&#x20;
+
+* Optymalizacja
+{% endhint %}
+
+16. FancyHolograms - [https://modrinth.com/plugin/fancyholograms](https://modrinth.com/plugin/fancyholograms)
+
+{% hint style="info" %}
+Plugin do zarządzania hologramami, przydatny np do oznaczania miejsc, czy topek.
+{% endhint %}
+
+{% hint style="warning" %}
+Wymagania:&#x20;
+
+* Minimalna wersja serwera: 1.21
+* Java 21
+{% endhint %}
+
+DecentHolograms - [https://modrinth.com/plugin/decentholograms](https://modrinth.com/plugin/decentholograms)
+
+{% hint style="info" %}
+Plugin do zarządzania hologramami, przydatny np do oznaczania miejsc, czy topek.
+{% endhint %}
+
+{% hint style="warning" %}
+Wymagania:&#x20;
+
+* Minimalna wersja serwera 1.8
+* Java 21
+{% endhint %}
+
+LibertyBans - [https://modrinth.com/plugin/libertybans](https://modrinth.com/plugin/libertybans)
+
+{% hint style="info" %}
+Plugin do zarządzania karami graczy: np. banowanie, wyciszanie, czy sprawdzanie ich obencnych jak i starych kar.
 {% endhint %}
 
