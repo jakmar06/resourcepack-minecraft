@@ -6,7 +6,7 @@
 
 ## Pluginy
 
-* [Lista Popularnych pluginów](pluginy/lista-popularnych-pluginow.md)
+* [Zalecane pluginy](pluginy/zalecane-pluginy.md)
 
 ## Resourcepacki
 
