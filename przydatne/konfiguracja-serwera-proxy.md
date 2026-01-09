@@ -5,7 +5,7 @@ description: >-
 icon: paper-plane
 ---
 
-# Proxy
+# Konfiguracja Serwera Proxy
 
 {% embed url="https://github.com/Helios3991/konfiguracja-serwera-proxy" %}
 Link do oryginalnego poradniaka
@@ -15,7 +15,7 @@ Poradnik ten został napisany pod najnowsze wersje silników Paper oraz Velocity
 
 
 
-## 0. Dlaczego Velocity?
+## Dlaczego Velocity?
 
 Kiedyś znajdowało się tu wyjaśnienie przewag Velocity nad BungeeCordem, ale jako że BungeeCord już umarł, uważam iż jest ono zbędne. Według statystyk bStats, na ten moment Velocity jest dwukrotnie popularniejszy niż BungeeCord i wszystkie silniki na nim bazujące razem wzięte.
 

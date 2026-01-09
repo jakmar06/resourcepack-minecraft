@@ -9,7 +9,7 @@ icon: icons
 
 ***
 
-### 🖌️ Krok 1: Stwórz własne tekstury prefixów
+### 1. Stwórz własne tekstury prefixów
 
 Możesz je przygotować w dowolnym programie graficznym (np. Photoshop, GIMP, Paint.NET, libresprite, asperite, blockbench).\
 Maksymalny wymiar: **256x256**
@@ -25,7 +25,7 @@ Dla przykładu zrobiłem 4 proste prefixy:
 
 ***
 
-### 📂 Krok 2: Dodaj tekstury do Resource Packa
+### 2. Dodaj tekstury do Resource Packa
 
 1. Pobierz gotowego Resource Packa: https://github.com/jakmar06/resourcepack-minecraft/releases/tag/v1.0.0.
 2. Otwórz go i przejdź do:\
@@ -34,7 +34,7 @@ Dla przykładu zrobiłem 4 proste prefixy:
 
 ***
 
-### 📝 Krok 3: Skonfiguruj `default.json`
+### 3. Skonfiguruj `default.json`
 
 Przejdź do:\
 &#xNAN;**`assets/minecraft/font/default.json`**\
@@ -81,7 +81,7 @@ Dodaj swoje prefixy, trzymając się tego formatu:
 
 ***
 
-### ⚙️ Znaczenie parametrów `ascent`, `height`, `file` i `chars`
+⚙️ Znaczenie parametrów `ascent`, `height`, `file` i `chars`
 
 * **`ascent`** – Odpowiada za położenie textury (w pionie)
 * **`height`** – Odpowiada za wielkość textury
@@ -100,14 +100,14 @@ Gotowy efekt na chacie:\
 
 ***
 
-### 🌐 Krok 4: Wgraj Resource Pack na hosting
+### 4. Wgraj Resource Pack na hosting
 
 Najprościej skorzystać z [mc-packs.net](https://mc-packs.net/).\
 Upewnij się, że resourcepack jest zapakowany w formacie **.zip**.
 
 ***
 
-### 🛠️ Krok 5: Konfiguracja serwera
+### 5. Konfiguracja serwera
 
 1. Otwórz plik `server.properties`
 2. Znajdź i zmodyfikuj poniższe linie:
@@ -124,7 +124,7 @@ resource-pack-sha1=baf77fd7bbc3b735975db419368851796885370a
 
 ***
 
-## ⚠️ Możliwe błędy/problemy/przydatne informacje
+## Możliwe błędy/problemy/przydatne informacje
 
 **1. Textura zostanie zabarwiona (np po kolorze nicku, czy chatu)**
 

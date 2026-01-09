@@ -17,21 +17,24 @@ Zalecane również jest włączenie wymogu pobrania resourcepacka, ponieważ gra
 
 ***
 
-### 🖌️ Krok 1: Przygotuj własne tekstury zbroi
+## Zbroja
+
+### 1. Przygotuj tekstury zbroi
 
 Na początek musisz stworzyć **teksturę/model zbroi**. Najlepiej zrobić to w programie **Blockbench**.
 
 Poniżej znajduje się film pokazujący, jak:
 
-* stworzyć model,
-* poprawnie go zapisać,
-* przygotować plik pod resource packa.
+* stworzyć model zbroji,
+* zapisać jego texture
+
+
 
 {% embed url="https://youtu.be/QDLNrleSITQ" %}
 
 ***
 
-### 📂 Krok 2: Dodaj tekstury do Resource Packa
+### 2. Dodaj tekstury do Resource Packa
 
 Gotową teksturę umieść **dokładnie w poniższej ścieżce**:
 
@@ -50,7 +53,7 @@ Gotową teksturę umieść **dokładnie w poniższej ścieżce**:
 
 ***
 
-### 📂 Krok 3: Utwórz definicję zbroi (plik `.json`)
+### 3. Zdefiniuj zbroje
 
 W tym kroku tworzysz **plik definicji**, który łączy teksturę z itemem.
 
@@ -92,7 +95,7 @@ W tym kroku tworzysz **plik definicji**, który łączy teksturę z itemem.
 
 ***
 
-### 🎮 Krok 4: Nadanie graczowi zbroi
+### 4. Nadaj graczowi zbroje
 
 #### 1. Bez ItemEdit (czyste komendy Minecraft)
 
@@ -136,9 +139,7 @@ Każdy element zbroi nadajesz osobną komendą:
 
 ***
 
-***
-
-## 📖 Jak zrobić custom model **dla elytry** bez OptiFine?
+## Elytra
 
 Proces jest **niemal identyczny** jak przy zbroi. Również:
 
@@ -148,7 +149,7 @@ Proces jest **niemal identyczny** jak przy zbroi. Również:
 
 ***
 
-### 🖌️ Krok 1: Stwórz teksturę elytry
+### 1. Przygotuj texture elytry
 
 Ponownie zalecany jest **Blockbench**. Poniższy film pokazuje tworzenie i zapis modelu elytry:
 
@@ -156,7 +157,7 @@ Ponownie zalecany jest **Blockbench**. Poniższy film pokazuje tworzenie i zapis
 
 ***
 
-### 📂 Krok 2: Dodaj teksturę elytry do Resource Packa
+### 2. Dodaj teksturę elytry do Resource Packa
 
 Teksturę umieść w dokładnie tej lokalizacji:
 
@@ -173,7 +174,7 @@ Teksturę umieść w dokładnie tej lokalizacji:
 
 ***
 
-### 📂 Krok 3: Utwórz definicję elytry (plik `.json`)
+### 3. Zdefiniuj elytre
 
 #### 1. Przejdź do ścieżki i utwórz plik:
 
@@ -205,7 +206,7 @@ Teksturę umieść w dokładnie tej lokalizacji:
 
 ***
 
-### 🎮 Krok 4: Nadanie elytry graczowi
+### 4. Nadaj graczowi elytre
 
 #### 1. Bez ItemEdit (komenda Minecraft):
 
@@ -220,11 +221,10 @@ Teksturę umieść w dokładnie tej lokalizacji:
 /ie equipment slot chest
 ```
 
-## ✨ Inne Informacje
+## Inne Informacje
 
-### 1. Dla layera elytry można również dodać layer zbroi, co pozwoli na połączenie elytry z np netherite napierśnikiem :)
-
-### 2. Inne możliwe compomenty:
+1. Dla layera elytry można również dodać layer zbroi, co pozwoli na połączenie elytry z np netherite napierśnikiem :)
+2. Inne możliwe compomenty:
 
 2.1 Zbroja dla happy ghasta: `happy_ghast_body`
 
