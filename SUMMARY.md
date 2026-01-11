@@ -6,7 +6,8 @@
 
 ## Pluginy
 
-* [Zalecane pluginy](pluginy/zalecane-pluginy.md)
+* [Zalecane pluginy](pluginy/zalecane-pluginy/README.md)
+  * [Carbon Chat](pluginy/zalecane-pluginy/carbon-chat.md)
 
 ## Resourcepacki
 
