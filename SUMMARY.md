@@ -2,7 +2,7 @@
 
 ## start
 
-* [Czym jest księga Minecraft?](README.md)
+* [Czym jest Minecraft Wiki?](README.md)
 
 ## Pluginy
 

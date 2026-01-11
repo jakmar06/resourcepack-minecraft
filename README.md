@@ -17,9 +17,9 @@ layout:
 metaLinks: {}
 ---
 
-# Czym jest księga Minecraft?
+# Czym jest Minecraft Wiki?
 
-Księga Minecraft jest ogólną Wikipedią dla właścicieli serwerów Minecraft.
+Minecraft Wiki jest ogólną Wikipedią dla właścicieli serwerów Minecraft.
 
 #### Co znajdę na stronie?
 
