@@ -17,3 +17,4 @@
 ## Przydatne
 
 * [Konfiguracja Serwera Proxy](przydatne/konfiguracja-serwera-proxy.md)
+* [Podpinanie Domeny](przydatne/podpinanie-domeny.md)
