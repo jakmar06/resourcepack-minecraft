@@ -12,6 +12,7 @@
 ## Resourcepacki
 
 * [Glyphs](resourcepacki/glyphs.md)
+* [overlays](resourcepacki/overlays.md)
 * [Equipment](resourcepacki/equipment.md)
 
 ## Przydatne
