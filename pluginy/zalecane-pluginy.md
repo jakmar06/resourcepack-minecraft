@@ -256,3 +256,9 @@ LibertyBans - [https://modrinth.com/plugin/libertybans](https://modrinth.com/plu
 Plugin do zarządzania karami graczy: np. banowanie, wyciszanie, czy sprawdzanie ich obencnych jak i starych kar.
 {% endhint %}
 
+{% hint style="warning" %}
+Wymagania:
+
+* Minimalna wersja serwera 1.8
+* Java 8
+{% endhint %}
