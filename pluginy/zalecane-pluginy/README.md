@@ -134,6 +134,10 @@ Wymagania:
 
 10. Carbon Chat - [https://modrinth.com/plugin/carbon](https://modrinth.com/plugin/carbon)
 
+{% content-ref url="carbon-chat.md" %}
+[carbon-chat.md](carbon-chat.md)
+{% endcontent-ref %}
+
 {% hint style="info" %}
 Plugin do zarządzania chatem, posiada wsparcie wielu instancji (synchronizacja chatu między wieloma instancjami), formatowanie chatu poprzez [minimessage](https://docs.papermc.io/adventure/minimessage/format/), oraz kanały chatu.
 {% endhint %}
