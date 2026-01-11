@@ -205,7 +205,7 @@ Minusy pluginu:&#x20;
 * Brak kompatybilności z dużą częścią pluginów: np mythicmobs
 {% endhint %}
 
-15. Citziens - [https://ci.citizensnpcs.co/job/Citizens2/](https://ci.citizensnpcs.co/job/Citizens2/)
+15. Citizens - [https://ci.citizensnpcs.co/job/Citizens2/](https://ci.citizensnpcs.co/job/Citizens2/)
 
 {% hint style="info" %}
 Plugin do tworzenia npc, używanych np. do przenioszenia na serwer na lobby, czy do otwierania gui.
