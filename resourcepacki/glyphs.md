@@ -36,14 +36,12 @@ Dla przykładu zrobiłem 4 proste prefixy:
 
 ### 3. Skonfiguruj `default.json`
 
-Przejdź do:\
-&#xNAN;**`assets/minecraft/font/default.json`**\
-i otwórz plik.
+[Lista przykładowych znaków do użycia](https://jrgraphix.net/r/Unicode/E000-F8FF)
 
 Dodaj swoje prefixy, trzymając się tego formatu:
 
-> [Lista przykładowych znaków do użycia](https://jrgraphix.net/r/Unicode/E000-F8FF)
-
+{% tabs %}
+{% tab title="assets:minecraft:font/default" %}
 ```json
 {
     "providers": [
@@ -78,6 +76,8 @@ Dodaj swoje prefixy, trzymając się tego formatu:
     ]
 }
 ```
+{% endtab %}
+{% endtabs %}
 
 ***
 
