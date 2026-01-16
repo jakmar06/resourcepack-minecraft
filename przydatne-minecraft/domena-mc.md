@@ -1,11 +1,11 @@
 ---
 description: >-
-  W tej części strony dowiesz się, jak podpiąć domenę pod twój serwer minecraft.
-  (cloudflare)
+  Poniżej znajdziesz instrukcję, jak skonfigurować domenę, aby kierowała ruch do
+  twojego serwera Minecraft. (cloudflare)
 icon: star-exclamation
 ---
 
-# Podpinanie Domeny pod serwer minecraft
+# Podłączanie domeny do serwera Minecraft
 
 {% stepper %}
 {% step %}
