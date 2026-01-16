@@ -56,7 +56,7 @@ Ustaw Wartość: `1` \
 Wpisz port twojego serwera. Port znajdziesz w panelu hostingu, zazwyczaj w zakładce z konsolą serwera, obok adresu IP. np: `2137.420.69.67:25565`
 
 {% hint style="info" %}
-&#x20;W tym przypadku portem jest `25565`
+&#x20;W moim przypadku portem jest `25565`
 {% endhint %}
 
 **Target**\
