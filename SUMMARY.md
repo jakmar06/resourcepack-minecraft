@@ -6,8 +6,8 @@
 
 ## Pluginy
 
-* [Zalecane pluginy](pluginy/zalecane-pluginy/README.md)
-  * [Carbon Chat](pluginy/zalecane-pluginy/carbon-chat.md)
+* [Zalecane pluginy](pluginy/pluginy/README.md)
+  * [Carbon Chat](pluginy/pluginy/carbon-chat.md)
 
 ## Resourcepacki
 
@@ -16,7 +16,7 @@
 * [Sounds](resourcepacki/sounds.md)
 * [overlays](resourcepacki/overlays.md)
 
-## Przydatne
+## Przydatne minecraft
 
-* [Konfiguracja Serwera Proxy](przydatne/konfiguracja-serwera-proxy.md)
-* [Podpinanie Domeny](przydatne/podpinanie-domeny.md)
+* [Konfiguracja Serwera Proxy](przydatne-minecraft/konfiguracja-serwera-proxy.md)
+* [Podpinanie Domeny pod serwer minecraft](przydatne-minecraft/podpinanie-domeny-pod-serwer-minecraft.md)
