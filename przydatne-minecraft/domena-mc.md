@@ -49,7 +49,7 @@ Kolejnym krokiem jest utworzenie nowego rekordu **SRV**, który umożliwi popraw
 **Name**\
 Wpisz: `_minecraft._tcp` \
 **Priority**\
-Ustaw Wartość: 1\
+Ustaw Wartość: `1`\
 **Weight**\
 Ustaw Wartość: `1` \
 **Port**\
@@ -63,7 +63,7 @@ Wpisz port twojego serwera. Port znajdziesz w panelu hostingu, zazwyczaj w zakł
 Wpisz nazwę rekordu A, który został utworzony wcześniej.
 
 {% hint style="info" %}
-W moim przypadku jest to: `hypixel.net`&#x20;
+W moim przypadku targetem jest: `hypixel.net`&#x20;
 {% endhint %}
 
 <figure><img src="../.gitbook/assets/obraz (4).png" alt=""><figcaption></figcaption></figure>
