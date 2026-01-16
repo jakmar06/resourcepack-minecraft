@@ -40,7 +40,7 @@ Kolejnym krokiem będzie stworzenie nowego rekordu, tym razem to będzie rekord 
 1\. W polu name ustawiamy wartość "\_minecraft.\_tcp." \
 2\. W polu Priority ustawiamy wartość "1"\
 3\. W polu Weight ustawiamy wartość  "1"\
-4\. W polu port ustawiamy swój port serwera. Korzystając z panelu hostingu zazwyczaj będzie one podane w zakładce z konsolą serwera po ip twojego serwera (twojeip:twojport: 2137.420.69.67:25565).\
+4\. W polu port ustawiamy swój port serwera. Korzystając z panelu hostingu zazwyczaj będzie one podane w zakładce z konsolą serwera po ip twojego serwera m\[. 2137.420.69.67:25565 (twojeip:twojport).\
 5\. W polu target ustawiamy nazwę rekordu a którą podaliśmy wcześniej, w moim przypadku jest to hypixel.net
 
 <figure><img src="../.gitbook/assets/obraz (4).png" alt=""><figcaption></figcaption></figure>
