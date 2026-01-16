@@ -38,6 +38,10 @@ W tym polu wpisz **ip numeryczne** twojego serwera. Ip znajdziesz w panelu hosti
 {% endstep %}
 
 {% step %}
+{% hint style="warning" %}
+Niektóre hostingi oferują subdomeny, w takim przypadku zalecane jest pominięcie tworzenia rekordu A. Wystarczy jedynie w rekordzie SRV w zakładce "target" ustawić twoją subdomene.
+{% endhint %}
+
 ### Tworzenie i konfiguracja rekordu SRV
 
 Kolejnym krokiem jest utworzenie nowego rekordu **SRV**, który umożliwi poprawne przekierowanie domeny na serwer Minecraft.\
@@ -75,7 +79,3 @@ Czasami podpięcie domeny może zająć dłuższy okres czasu (czasem nawet 48 g
 {% endhint %}
 {% endstep %}
 {% endstepper %}
-
-{% hint style="warning" %}
-Niektóre hostingi oferują subdomeny, w takim przypadku zalecane jest pominięcie tworzenia rekordu A. Wystarczy jedynie w rekordzie SRV w zakładce "target" ustawić twoją subdomene.
-{% endhint %}
