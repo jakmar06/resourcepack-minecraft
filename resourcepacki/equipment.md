@@ -15,31 +15,29 @@ Poradnik dotyczy jedynie wersji 1.21.2 +, na niższych wersjach gracze nie będ�
 Zalecane również jest włączenie wymogu pobrania resourcepacka, ponieważ gracze bez pobranego resourepacka będą wiedzieć pusty model bez żadnej textury, tak jakby nie nosili zbroi.
 {% endhint %}
 
-
-
 ***
 
 ## Zbroja
 
-### 1. Przygotuj tekstury zbroi
+{% stepper %}
+{% step %}
+### Przygotuj texture zbroji
 
-Na początek musisz stworzyć **teksturę/model zbroi**. Najlepiej zrobić to w programie **Blockbench**.
+* Na początek musisz stworzyć **teksturę/model zbroi**. Najlepiej zrobić to w programie **Blockbench**
+* Poniżej znajduje się film pokazujący, jak:&#x20;
 
-Poniżej znajduje się film pokazujący, jak:
-
-* stworzyć model zbroji,
-* zapisać jego texture
-
-
+&#x20;     \- stworzyć model zbroji,\
+&#x20;     \- zapisać jego texture
 
 {% embed url="https://youtu.be/QDLNrleSITQ" %}
+{% endstep %}
 
-***
-
-### 2. Dodaj tekstury do Resource Packa
+{% step %}
+### Dodaj tekstury do Resource Packa
 
 Gotową teksturę umieść **dokładnie w poniższej ścieżce**:
 
+{% code fullWidth="false" %}
 ```yaml
 📁twój_resourcepack
 └── 📁assets
@@ -50,16 +48,19 @@ Gotową teksturę umieść **dokładnie w poniższej ścieżce**:
                     └── 📁humanoid/humanoid_leggings
                         └── 🧮przykladowa_nazwa.png
 ```
+{% endcode %}
 
-📌 `twoj_namespace` to namespace Twojego resource packa 📌 `przykladowa_nazwa.png` to tekstura Twojej zbroi
+{% hint style="info" %}
+`twoj_namespace` to namespace Twojego resource packa 📌 `przykladowa_nazwa.png` to textura Twojej zbroi
+{% endhint %}
+{% endstep %}
 
-***
-
-### 3. Zdefiniuj zbroje
+{% step %}
+### Zdefiniuj zbroje
 
 W tym kroku tworzysz **plik definicji**, który łączy teksturę z itemem.
 
-#### 1. Przejdź do ścieżki i utwórz plik:
+#### 3.1 Przejdź do ścieżki o utwórz plik .json
 
 ```yaml
 📁twój_resourcepack
@@ -68,8 +69,6 @@ W tym kroku tworzysz **plik definicji**, który łączy teksturę z itemem.
         └── 📁equipment
             └── 📑przykladowa_nazwa.json
 ```
-
-***
 
 #### 2. Wklej poniższą zawartość:
 
@@ -90,30 +89,32 @@ W tym kroku tworzysz **plik definicji**, który łączy teksturę z itemem.
 }
 ```
 
+{% hint style="info" %}
 📌 Ten plik definiuje, jak tekstura ma być używana:
 
 * `humanoid` → hełm, klata, buty
 * `humanoid_leggings` → nogawice
+{% endhint %}
+{% endstep %}
 
-***
+{% step %}
+### Nadaj graczowi zbroje
 
-### 4. Nadaj graczowi zbroje
-
-#### 1. Bez ItemEdit (czyste komendy Minecraft)
+#### 4.1 Bez ItemEdit (czyste komendy Minecraft)
 
 Każdy element zbroi nadajesz osobną komendą:
 
 ```yaml
-1.1 Hełm:
+4.1.1 Hełm:
 /minecraft:give <nick> minecraft:item[equippable={asset_id: "twoj_namespace:przykladowa_nazwa", slot: "head"}]
 
-1.2 Napierśnik:
+4.1.2 Napierśnik:
 /minecraft:give <nick> minecraft:item[equippable={asset_id: "twoj_namespace:przykladowa_nazwa", slot: "chest"}]
 
-1.3 Nogawice:
+4.1.3 Nogawice:
 /minecraft:give <nick> minecraft:item[equippable={asset_id: "twoj_namespace:przykladowa_nazwa", slot: "legs"}]
 
-1.4 Buty:
+4.1.4 Buty:
 /minecraft:give <nick> minecraft:item[equippable={asset_id: "twoj_namespace:przykladowa_nazwa", slot: "feet"}]
 ```
 
@@ -137,7 +138,11 @@ Każdy element zbroi nadajesz osobną komendą:
 /ie equipment slot feet
 ```
 
-📌 `asset_id` musi **idealnie** zgadzać się z nazwą pliku `.json`
+{% hint style="info" %}
+&#x20;`asset_id` musi **idealnie** zgadzać się z nazwą pliku `.json`
+{% endhint %}
+{% endstep %}
+{% endstepper %}
 
 ***
 
