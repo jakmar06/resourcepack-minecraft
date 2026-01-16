@@ -19,4 +19,4 @@
 ## Przydatne minecraft
 
 * [Konfiguracja Serwera Proxy](przydatne-minecraft/konfiguracja-serwera-proxy.md)
-* [Podpinanie Domeny pod serwer minecraft](przydatne-minecraft/podpinanie-domeny-pod-serwer-minecraft.md)
+* [Podpinanie Domeny pod serwer minecraft](przydatne-minecraft/domena-mc.md)
