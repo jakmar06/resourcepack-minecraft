@@ -3,6 +3,25 @@ description: >-
   Poradnik, dzięki któremu w bezpieczny sposób skonfigurujesz serwer proxy w
   celu połączenia kilku serwerów Minecraft.
 icon: paper-plane
+cover: ../.gitbook/assets/velocity.png
+coverY: -32.27848101265823
+layout:
+  width: default
+  cover:
+    visible: true
+    size: hero
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
 ---
 
 # Konfiguracja Serwera Proxy
