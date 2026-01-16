@@ -29,9 +29,9 @@ Stwórz nowy rekord typu A
 
 Po utworzeniu rekordu typu **A** należy poprawnie skonfigurować jego podstawowe parametry.\
 \
-Name\
+**Name**\
 Jako nazwę rekordu zaleca się ustawić znak: `@` Lub wpisać pełną nazwę swojej domeny (np.`hypixel.net`)\
-IPv4 Address\
+**IPv4 Address**\
 W tym polu wpisz **ip numeryczne** twojego serwera. Ip znajdziesz w panelu hostingu, zazwyczaj w zakładce z konsolą serwera np. `2137.420.69.67`
 
 <figure><img src="../.gitbook/assets/obraz (2).png" alt=""><figcaption></figcaption></figure>
