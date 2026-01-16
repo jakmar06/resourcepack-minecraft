@@ -53,3 +53,6 @@ Jeżeli wykonałeś wszystko poprawnie powinieneś móc połączyć się już z 
 {% endstep %}
 {% endstepper %}
 
+{% hint style="warning" %}
+Niektóre hostingi oferują subdomeny, w takim przypadku zalecane jest pominięcie tworzenia rekordu A. Wystarczy jedynie w rekordzie SRV w zakładce "target" ustawić twoją subdomene.
+{% endhint %}
