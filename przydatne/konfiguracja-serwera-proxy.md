@@ -4,7 +4,7 @@ description: >-
   celu połączenia kilku serwerów Minecraft.
 icon: paper-plane
 cover: ../.gitbook/assets/velocity.png
-coverY: -60.75949367088609
+coverY: -39.873417721519
 layout:
   width: default
   cover:
