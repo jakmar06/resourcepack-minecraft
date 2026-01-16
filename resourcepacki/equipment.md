@@ -60,7 +60,7 @@ Gotową teksturę umieść **dokładnie w poniższej ścieżce**:
 
 W tym kroku tworzysz **plik definicji**, który łączy teksturę z itemem.
 
-#### 3.1 Przejdź do ścieżki o utwórz plik .json
+#### 3.1 Przejdź do ścieżki i utwórz plik .json
 
 ```yaml
 📁twój_resourcepack
