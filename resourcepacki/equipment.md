@@ -3,6 +3,8 @@ description: >-
   W tej części poradnika dowiesz się, jak tworzyć własne modele dla layeru zbroi
   i elytry dla gracza oraz jak implementować niestandardowe zbroje dla mobów.
 icon: helmet-battle
+cover: ../.gitbook/assets/equipment.png
+coverY: 0
 ---
 
 # Equipment

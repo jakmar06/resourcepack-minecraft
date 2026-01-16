@@ -3,6 +3,8 @@ description: >-
   W tej części poradnika dowiesz się, jak tworzyć własne customowe gui, prefixy
   oraz emotki za pomocą resourepacka
 icon: icons
+cover: ../.gitbook/assets/glyphs.png
+coverY: 0
 ---
 
 # Glyphs
