@@ -27,21 +27,40 @@ Stwórz nowy rekord typu A
 {% step %}
 ### Ustawianie rekordu typu A
 
-Po stworzeniu rekordu typu A, musisz ustawić jego nazwę, zalecane jest ustawienie znaku "@ lub twojej domeny". Po ustawieniu jego nazwy musisz podać ip numeryczne twojego serwera. Korzystając z panelu hostingu zazwyczaj będzie one podane w zakładce z konsolą serwera.
+Po utworzeniu rekordu typu **A** należy poprawnie skonfigurować jego podstawowe parametry.\
+\
+Name\
+Jako nazwę rekordu zaleca się ustawić znak: `@` Lub wpisać pełną nazwę swojej domeny (np.`hypixel.net`)\
+IPv4 Address\
+W tym polu wpisz **ip numeryczne** twojego serwera. Ip znajdziesz w panelu hostingu, zazwyczaj w zakładce z konsolą serwera np. `2137.420.69.67`
 
 <figure><img src="../.gitbook/assets/obraz (2).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
-### Tworzenie i ustawienie rekordu SRV
+### Tworzenie i konfiguracja rekordu SRV
 
-Kolejnym krokiem będzie stworzenie nowego rekordu, tym razem to będzie rekord SRV.\
+Kolejnym krokiem jest utworzenie nowego rekordu **SRV**, który umożliwi poprawne przekierowanie domeny na serwer Minecraft.\
 \
-1\. W polu name ustawiamy wartość "\_minecraft.\_tcp." \
-2\. W polu Priority ustawiamy wartość "1"\
-3\. W polu Weight ustawiamy wartość  "1"\
-4\. W polu port ustawiamy swój port serwera. Korzystając z panelu hostingu zazwyczaj będzie one podane w zakładce z konsolą serwera po ip twojego serwera m\[. 2137.420.69.67:25565 (twojeip:twojport).\
-5\. W polu target ustawiamy nazwę rekordu a którą podaliśmy wcześniej, w moim przypadku jest to hypixel.net
+**Name**\
+Wpisz: `_minecraft._tcp` \
+**Priority**\
+Ustaw Wartość: 1\
+**Weight**\
+Ustaw Wartość: `1` \
+**Port**\
+Wpisz port twojego serwera. Port znajdziesz w panelu hostingu, zazwyczaj w zakładce z konsolą serwera, obok adresu IP. np: `2137.420.69.67:25565`
+
+{% hint style="info" %}
+&#x20;W tym przypadku portem jest `25565`
+{% endhint %}
+
+**Target**\
+Wpisz nazwę rekordu A, który został utworzony wcześniej.
+
+{% hint style="info" %}
+W moim przypadku jest to: `hypixel.net`&#x20;
+{% endhint %}
 
 <figure><img src="../.gitbook/assets/obraz (4).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
@@ -50,6 +69,10 @@ Kolejnym krokiem będzie stworzenie nowego rekordu, tym razem to będzie rekord 
 ### Połącz się z twoim serwerem
 
 Jeżeli wykonałeś wszystko poprawnie powinieneś móc połączyć się już z twoim serwerem.
+
+{% hint style="warning" %}
+Czasami podpięcie domeny może zająć dłuższy okres czasu (czasem nawet 48 godzin w najgorszych przypadkach). Jeżeli odrazu nie będziesz mógł się połączyć z serwerem nie panikuj, odczekaj chwile.
+{% endhint %}
 {% endstep %}
 {% endstepper %}
 
