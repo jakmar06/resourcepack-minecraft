@@ -27,7 +27,7 @@ Stwórz nowy rekord typu A
 {% step %}
 ### Ustawianie rekordu typu A
 
-Po utworzeniu rekordu typu **A** należy poprawnie skonfigurować jego podstawowe parametry.\
+Po utworzeniu rekordu typu **A** należy poprawnie skonfigurować jego parametry.\
 \
 **Name**\
 Jako nazwę rekordu zaleca się ustawić znak: `@` Lub wpisać pełną nazwę swojej domeny (np.`hypixel.net`)\
