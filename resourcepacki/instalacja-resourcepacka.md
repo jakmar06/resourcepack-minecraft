@@ -36,7 +36,6 @@ Pamiętaj, by twój resourcepack znajdował się w pliku `.zip`, oraz żeby zawi
 * Umieść plugin `forcepack` w folderze `plugins`&#x20;
 * Zrestartuj serwer
 * Gdy plugin zainstaluje się na serwerze przejdź do jego konfiguacji i zmień niżej wymienione opcje.
-* Przeładuj plugin komendą `/forcepack reload` (na proxy to będzie `/vforcepack reload`)
 
 {% code title="plugins:forcepack/config.yml" fullWidth="false" %}
 ```yaml
@@ -50,5 +49,7 @@ Server:
       hashes: ["abc67aed085220a347e8014d35a142703fed5271"]
 ```
 {% endcode %}
+
+* Przeładuj plugin komendą `/forcepack reload` (na proxy to będzie `/vforcepack reload`)
 {% endstep %}
 {% endstepper %}
