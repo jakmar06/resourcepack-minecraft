@@ -26,7 +26,7 @@ Drugim krokiem będzie wgranie twojego resourcepacka na hosting, w tym celu zale
 {% embed url="https://mc-packs.net/" %}
 
 {% hint style="danger" %}
-Pamiętaj, by twój resourcepack znajdował się w pliku `.zip` , oraz żeby zawierał w głównym katalogu poprawnie sfortmatowany plik `pack.mcmeta`.
+Pamiętaj, by twój resourcepack znajdował się w pliku `.zip`, oraz żeby zawierał w głównym katalogu poprawnie sfortmatowany plik `pack.mcmeta`.
 {% endhint %}
 {% endstep %}
 
