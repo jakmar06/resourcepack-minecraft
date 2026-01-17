@@ -40,7 +40,7 @@ Pamiętaj, by twój resourcepack znajdował się w pliku `.zip`, oraz żeby zawi
 * Gdy plugin zainstaluje się na serwerze przejdź do jego konfiguacji i zmień niżej wymienione opcje.
 
 {% code title="plugins:forcepack/config.yml" fullWidth="false" %}
-```yml
+```yaml
 test
 ```
 {% endcode %}
