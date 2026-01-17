@@ -43,10 +43,10 @@ Pamiętaj, by twój resourcepack znajdował się w pliku `.zip`, oraz żeby zawi
 Server:
   packs:
     all:
-      ## Na stronie forcepack znajdziesz to pod opcja "Download URL:"
+      ## Na stronie MCPacksznajdziesz to pod opcja "Download URL:"
       urls: ["https://download.mc-packs.net/pack/abc67aed085220a347e8014d35a142703fed5271.zip"]
       generate-hash: false
-      ## Na stronie forcepack znajdziesz to pod opcja "SHA-1 Hash:"
+      ## Na stronie MCPacks znajdziesz to pod opcja "SHA-1 Hash:"
       hashes: ["abc67aed085220a347e8014d35a142703fed5271"]
 ```
 {% endcode %}
