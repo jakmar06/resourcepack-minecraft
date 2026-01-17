@@ -9,7 +9,7 @@ icon: cowbell
 
 ## Informacje na chacie
 
-<table><thead><tr><th width="206.3333740234375">Gamerule</th><th width="107.2335205078125">Wartości</th><th width="190.3499755859375">Podstawowa wartość</th><th>Opis</th></tr></thead><tbody><tr><td>command_block_output</td><td>true/false</td><td>true</td><td></td></tr><tr><td>log_admin_commands</td><td>true/false</td><td>true</td><td></td></tr><tr><td>send_command_feedback</td><td>true/false</td><td>true</td><td></td></tr><tr><td>show_advancement_messages</td><td>true/false</td><td>true</td><td></td></tr><tr><td>show_death_messages</td><td>true/false</td><td>true</td><td></td></tr></tbody></table>
+<table><thead><tr><th width="206.3333740234375">Gamerule</th><th width="107.2335205078125">Wartości</th><th width="190.3499755859375">Podstawowa wartość</th><th>Opis</th></tr></thead><tbody><tr><td>command_block_output</td><td>true/false</td><td>true</td><td>Informacje u wysyłaniu komend poprzez commandblock</td></tr><tr><td>log_admin_commands</td><td>true/false</td><td>true</td><td>Informacje o użyciu komendy administratorskiej np. gamemode</td></tr><tr><td>send_command_feedback</td><td>true/false</td><td>true</td><td>Informacje zwrotne po wpisaniu komendy przez gracza (dotyczny tylko niektórych komend np. give)</td></tr><tr><td>show_advancement_messages</td><td>true/false</td><td>true</td><td>Powiadomienia o zdobyciu osiągnięcia przez gracza</td></tr><tr><td>show_death_messages</td><td>true/false</td><td>true</td><td>Powiadomienia o śmierci gracza</td></tr></tbody></table>
 
 ## Ustawienia dropu z mobów, bloków itp.&#x20;
 
