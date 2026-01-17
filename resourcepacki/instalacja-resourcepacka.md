@@ -13,7 +13,7 @@ icon: instalod
 {% step %}
 ### Instalacja pluginu forcepack
 
-Pierwszym krokiem będzie pbranie pluginu forcepack, pozwoli on na zarządzanie resourepackiem gdy serwer jest włączony. (Możesz również zainstalować go na serwerze proxy)
+Pierwszym krokiem będzie pobranie pluginu forcepack, pozwoli on na zarządzanie resourepackiem gdy serwer jest włączony. (Możesz również zainstalować go na serwerze proxy)
 
 {% embed url="https://modrinth.com/plugin/forcepack" fullWidth="false" %}
 {% endstep %}
