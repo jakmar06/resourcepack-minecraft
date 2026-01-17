@@ -11,6 +11,7 @@
 
 ## Resourcepacki
 
+* [Instalacja resourcepacka](resourcepacki/instalacja-resourcepacka.md)
 * [Glyphs](resourcepacki/glyphs.md)
 * [Equipment](resourcepacki/equipment.md)
 * [Sounds](resourcepacki/sounds.md)
