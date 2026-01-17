@@ -11,7 +11,7 @@ icon: instalod
 
 {% stepper %}
 {% step %}
-### Instalacja pluginu forcepack.
+### Instalacja pluginu forcepack
 
 Pierwszym krokiem będzie pbranie pluginu forcepack, pozwoli on na zarządzanie resourepackiem gdy serwer jest włączony. (Możesz również zainstalować go na serwerze proxy)
 
