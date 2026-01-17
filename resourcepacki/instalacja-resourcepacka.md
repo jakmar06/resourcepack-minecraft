@@ -23,7 +23,7 @@ Pierwszym krokiem będzie zainstalowanie pluginu forcepack, pozwoli on na zarzą
 {% step %}
 ### Wgranie resourcepacka na hosting
 
-Drugim krokiem będzie wgranie twojego resourcepacka na hosting, w tym calu zalecam skorzystanie ze strony forcepack, została ona stworzona specjalnie pod hosting resourcepacków dla serwerów Minecraft.
+Drugim krokiem będzie wgranie twojego resourcepacka na hosting, w tym celu zalecam skorzystanie ze strony MCPacks, została ona stworzona specjalnie pod hosting resourcepacków dla serwerów Minecraft.
 
 {% embed url="https://mc-packs.net/" %}
 
