@@ -15,7 +15,7 @@
 * [Glyphs](resourcepacki/glyphs.md)
 * [Equipment](resourcepacki/equipment.md)
 * [Sounds](resourcepacki/sounds.md)
-* [overlays](resourcepacki/overlays.md)
+* [Overlays](resourcepacki/overlays.md)
 
 ## Przydatne minecraft
 
