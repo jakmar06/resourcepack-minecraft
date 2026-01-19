@@ -206,7 +206,7 @@ Wymagania:
 {% hint style="danger" %}
 Minusy pluginu:&#x20;
 
-* Brak kompatybilności z dużą częścią pluginów: np mythicmobs
+* Brak kompatybilności z dużą częścią pluginów: np modelengine
 {% endhint %}
 
 15. Citizens - [https://ci.citizensnpcs.co/job/Citizens2/](https://ci.citizensnpcs.co/job/Citizens2/)
@@ -223,9 +223,9 @@ Wymagania:&#x20;
 {% endhint %}
 
 {% hint style="danger" %}
-Miniusy pluginu:&#x20;
+Minusy pluginu:&#x20;
 
-* Optymalizacja
+* Wysokie zużycie zasobów
 {% endhint %}
 
 16. FancyHolograms - [https://modrinth.com/plugin/fancyholograms](https://modrinth.com/plugin/fancyholograms)
