@@ -22,8 +22,6 @@ W tej sekcji nic jeszcze nie ma
 
 ### ItemLinks
 
-{% embed url="https://youtu.be/ZBlw-IjnBNw" %}
-
 <table><thead><tr><th width="133">Slot</th><th width="188">Alliasy</th><th width="261">Opis</th></tr></thead><tbody><tr><td>Hełm</td><td><code>&#x3C;helm></code>, <code>&#x3C;helmet></code>, <code>&#x3C;hat></code>, <code>&#x3C;head></code></td><td>Pozwala graczowi wysłać na chat informacje o przedmiocie z swojego slotu na głowie.</td></tr><tr><td>Napierśnik</td><td><code>&#x3C;chest></code>, <code>&#x3C;chestplate></code></td><td>Pozwala graczowi wysłać na chat informacje o przedmiocie z swojego slotu na napierśnik.</td></tr><tr><td>Nogawice</td><td><code>&#x3C;legs></code>, <code>&#x3C;leggings></code></td><td>Pozwala graczowi wysłać na chat informacje o przedmiocie z swojego slotu na nogawice.</td></tr><tr><td>Buty</td><td><code>&#x3C;boots></code>, <code>&#x3C;feet></code></td><td>Pozwala graczowi wysłać na chat informacje i przedmiocie z z swojego slotu na buty.</td></tr><tr><td>Główna ręka</td><td><code>&#x3C;main_hand></code>, <code>&#x3C;hand></code>, <code>&#x3C;item></code></td><td>Pozwala graczowi wysłać na chat informacje o przedmiocie z swojej drugiej głównej ręki</td></tr><tr><td>Druga ręka</td><td><code>&#x3C;off_hand</code></td><td>Pozwala graczowi wysłać na chat informacje z swojej drugiej ręki</td></tr></tbody></table>
 
 {% hint style="danger" %}
