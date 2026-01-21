@@ -1,5 +1,6 @@
 ---
 description: W tej sekcji znajdziesz konfiguracje dla pluginów
+hidden: true
 ---
 
 # Konfiguracje pluginów
