@@ -19,6 +19,7 @@
 
 ## Przydatne minecraft
 
+* [Konfiguracje pluginów](przydatne-minecraft/konfiguracje-pluginow.md)
 * [Konfiguracja Serwera Proxy](przydatne-minecraft/konfiguracja-serwera-proxy.md)
 * [Gamerule minecraft (1.21.11)](przydatne-minecraft/gamerule.md)
 * [Podłączanie domeny do serwera Minecraft](przydatne-minecraft/domena-mc.md)
