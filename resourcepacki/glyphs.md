@@ -11,12 +11,126 @@ coverY: 0
 
 ***
 
-### 1. Stwórz własne tekstury prefixów
+## &#x20;Custom Prefixy
 
-Możesz je przygotować w dowolnym programie graficznym (np. Photoshop, GIMP, Paint.NET, libresprite, asperite, blockbench).\
-Maksymalny wymiar: **256x256**
+{% stepper %}
+{% step %}
+### Przygotowanie prefixów
 
-Dla przykładu zrobiłem 4 proste prefixy:
+Przygotuj tekstury twoich prefixów w dowolnym programie graficznym, poniżej masz kilka przykładów:
+
+* Photoshop
+* Photopea
+* Paint.NET
+* Gimp
+* Blockbench (zalecane)
+* Libresprite/asperite (zalecane)
+
+Możesz również kupić/pobrać gotowe prefixy lub użyć prostego generatora prefixów np:
+
+{% embed url="https://www.artillex-studios.com/prefix-generator" %}
+
+{% hint style="warning" %}
+Pamiętaj, że maksymalne wymiary **pojedynczej tekstury** custom glypha wynoszą **256×256**, oraz **muszą** być w formacie **.png**
+{% endhint %}
+{% endstep %}
+
+{% step %}
+### Umieść Tekstury w odpowiednim folderze
+
+Gotowe tekstury umieść w niżej wymienionej śćieżce
+
+```yaml
+📁twój_resourcepack
+└── 📁assets
+    └── 📁twoj_namespace
+        └── 📁textures
+            └── 📁twoja_nazwa
+                └── 🧮 twoja_tekstura/twoje_tekstury.png
+```
+
+{% hint style="info" %}
+* `twoj_namespace` to główny folder twoje resourcepacka, w podstawowym resourcepacku nazywa się to `minecraft`.
+{% endhint %}
+{% endstep %}
+
+{% step %}
+### Zdefiniuj custom znaki
+
+W tym kroku tworzysz **plik definicji**, który łączy teksturę z custom fontem. Aby to zrobić musisz trzymać się niżej wymienionego formatu oraz użyć custom znaków.
+
+{% embed url="https://jrgraphix.net/r/Unicode/E000-F8FF" %}
+Strona z przykładowymi znakami
+{% endembed %}
+
+{% code title="assets:twoj_namespace/font:twoja_nazwa.json" %}
+```json
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "twoj_namespace:twoja_nazwa/root.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["ᜀ"]
+        },
+        {
+            "type": "bitmap",
+            "file": "twoj_namespace:twoja_nazwa/moderator.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["ᜁ"]
+        },
+        {
+            "type": "bitmap",
+            "file": "twoj_namespace:twoja_nazwa/vip.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["ᜂ"]
+        },
+        {
+            "type": "bitmap",
+            "file": "twoj_namespace:twoja_nazwa/gracz.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["ᜃ"]
+        }
+    ]
+}
+```
+{% endcode %}
+
+{% hint style="info" %}
+* Gdy umieścisz custom znaki w innym folderze niż `minecraft` może to być problematyczne gdy twój plugin nie ma wsparcia formatowania wiadomości [**minimessage**](https://docs.papermc.io/adventure/minimessage/format/#font), ponieważ nie będą one działać do momentu póki nie zdefinujesz ścieżki.&#x20;
+* `twoja_nazwa.json` W tym pliku przydzielasz custom teksture dla znaku, pamiętaj że jak w przypadku namespace nie znajduje się on w folderze `minecraft` oraz nie jest nazwany `default.json` to będziesz musiał zdefiniować śćieżkę używająć formatu [**minimessage**](https://docs.papermc.io/adventure/minimessage/format/#font)**.**
+{% endhint %}
+
+#### Znaczenie parametrów
+
+* **`ascent`** – Odpowiada za położenie textury (w pionie)
+* **`height`** – Odpowiada za wielkość textury
+* **`file`** - Odpowiada za ścieżkę do textury
+* **`chars`** - Odpowiada za custom znak który ma być wykorzystany do zmiany textury
+
+**Zalecane wartości:**
+
+* **`ascent`** - 7
+* **`height`** - 8
+{% endstep %}
+
+{% step %}
+### Instalacja resourcepacka
+
+Skorzystaj z niżej wymienionego poradnika by zainstalować poprawnie resourcepack:
+
+{% embed url="https://jakmar.gitbook.io/minecraft-wiki/resourcepacki/instalacja-resourcepacka" %}
+{% endstep %}
+
+{% step %}
+### Ustawienie prefixów za pomocą luckperms
+
+Ustaw twoje prefixy za pomocą komendy `/lp group <ranga> meta setprefix <waga> "<white>custom_znak"`
+
+Poniżej przedstawiam tabelke z przykładami, oraz gotowego resourepacka na którym można się wzorować.
 
 | Ranga          | Wymiary Textury | Custom Znak | Textura Prefixu                                                                           |
 | -------------- | --------------- | ----------- | ----------------------------------------------------------------------------------------- |
@@ -25,128 +139,46 @@ Dla przykładu zrobiłem 4 proste prefixy:
 | **VIP**        | 75×16           | ᜂ           | ![obraz](https://github.com/user-attachments/assets/80da3696-c153-411e-95df-e80ead225abf) |
 | **Gracz**      | 87×16           | ᜃ           | ![obraz](https://github.com/user-attachments/assets/4fdb46a1-31b1-4de5-b3c9-3719414fda27) |
 
-***
+{% embed url="https://github.com/jakmar06/resourcepack-minecraft/releases/tag/v.1.0.0_Prefix" %}
+Link do gotowych assetów
+{% endembed %}
+{% endstep %}
 
-### 2. Dodaj tekstury do Resource Packa
+{% step %}
+### Możliwe problemy oraz przydatne informacje.
 
-1. Pobierz gotowego Resource Packa: https://github.com/jakmar06/resourcepack-minecraft/releases/tag/v1.0.0.
-2. Otwórz go i przejdź do:\
-   &#xNAN;**`assets/jakubprefix/textures/prefix`**
-3. Wgraj tam swoje textury (w formacie **.png**).
-
-***
-
-### 3. Skonfiguruj `default.json`
-
-[Lista przykładowych znaków do użycia](https://jrgraphix.net/r/Unicode/E000-F8FF)
-
-Dodaj swoje prefixy, trzymając się tego formatu:
-
-{% tabs %}
-{% tab title="assets:minecraft:font/default" %}
-```json
-{
-    "providers": [
-        {
-            "type": "bitmap",
-            "file": "jakubprefix:prefix/root.png",
-            "ascent": 7,
-            "height": 8,
-            "chars": ["ᜀ"]
-        },
-        {
-            "type": "bitmap",
-            "file": "jakubprefix:prefix/moderator.png",
-            "ascent": 7,
-            "height": 8,
-            "chars": ["ᜁ"]
-        },
-        {
-            "type": "bitmap",
-            "file": "jakubprefix:prefix/vip.png",
-            "ascent": 7,
-            "height": 8,
-            "chars": ["ᜂ"]
-        },
-        {
-            "type": "bitmap",
-            "file": "jakubprefix:prefix/gracz.png",
-            "ascent": 7,
-            "height": 8,
-            "chars": ["ᜃ"]
-        }
-    ]
-}
-```
-{% endtab %}
-{% endtabs %}
-
-***
-
-⚙️ Znaczenie parametrów `ascent`, `height`, `file` i `chars`
-
-* **`ascent`** – Odpowiada za położenie textury (w pionie)
-* **`height`** – Odpowiada za wielkość textury
-* **`file`** - Odpowiada za ścieżkę do textury
-* **`chars`** - Odpowiada za custom znak który ma być wykorzystany do zmiany textury
-
-🔧 Zalecane wartości:
-
-* **`ascent`** - 7
-* **`height`** - 8
-
-Gotowy efekt na chacie:\
-![358780551-aaa07922-7122-47e5-ab4b-0e9342c1fcec](https://github.com/user-attachments/assets/2700c185-3226-4386-aa04-143de6838b41)
-
-> ⚠️ **Uwaga:** nie ustawiaj zbyt dużych wartości – zbyt wysokie wartości mogą spowodować nieprawidłowe załadowanie textury
-
-***
-
-### 4. Wgraj Resource Pack na hosting
-
-Najprościej skorzystać z [mc-packs.net](https://mc-packs.net/).\
-Upewnij się, że resourcepack jest zapakowany w formacie **.zip**.
-
-***
-
-### 5. Konfiguracja serwera
-
-1. Otwórz plik `server.properties`
-2. Znajdź i zmodyfikuj poniższe linie:
-
-```properties
-require-resource-pack=true
-resource-pack=https://download.mc-packs.net/pack/baf77fd7bbc3b735975db419368851796885370a.zip
-resource-pack-sha1=baf77fd7bbc3b735975db419368851796885370a 
-```
-
-* Pierwsza linia wymusza pobranie resourcepacka. ( true wymusza, false nie wymusza)
-* Druga linia to link do paczki.
-* Trzecia linia to hash SHA-1. (Przydatne, gdy używasz tego samego resourcepacka na paru instancjach, wtedy gracze przechodząc z trybu na tryb nie będą go ponownie ładować)
-
-***
-
-## Możliwe błędy/problemy/przydatne informacje
-
-**1. Textura zostanie zabarwiona (np po kolorze nicku, czy chatu)**
+#### 1. Tekstura zamiast koloru białego będzie miała inny np. różowy
 
 ![358780847-d445d342-a27d-4fa4-a08f-412c91809e8f](https://github.com/user-attachments/assets/e3a5a2e3-d217-4c3c-8d6a-664aa33a13cf)
 
-`Aby uniknąć tego problemu kolor prefixu musi zostać zresetowany (&f/&r/§f/§r)`
+{% hint style="info" %}
+Aby uniknąć tego problemu, kolor twojego prefixu musi być biały. Przed twoim custom znakiem podczas ustawiania prefixu możesz umieśćić: `<white>/<reset>/&f/&r/§f/§r`
+{% endhint %}
 
-**2. Gracze odnajdą twój znak**
+#### 2. Gracze odkryją twój custom znak.
 
-Jeżeli gracze znajdą twój znak będą mogli nim zaspamić chat, co by mogło zniszczyć jego czytelność.
+{% hint style="info" %}
+Jeżeli gracze odkryją twój custom znak, będą mogli go wysłać na chat co by mogło zniszczyć jego czytelność.&#x20;
 
-`Aby rozwiązać problem, należy pobrać dowolny plugin na blokadę słów/znaków, przykładowo` [carbonchat](https://modrinth.com/plugin/carbon) Wiki dla: [carbonchatu](https://github.com/Hexaoxide/Carbon/wiki/Basic-Configuration#chat-filter)
+* Aby rozwiązać ten problem możesz pobrać dowolny plugin na blokadę znaków/słów, np. [carbonchat](https://modrinth.com/plugin/carbon). Sprawdź [carbonchatu](https://github.com/Hexaoxide/Carbon/wiki/Basic-Configuration#chat-filter)
+* Możesz również użyć innego namespace jak pisałem powyżej w punkcie 3.
 
-**3. Ikonka mimo prawidłowej ścieżki się nie pojawia**
 
-`Aby rozwiązać ten problem, sprawdź czy textura w nazwie nie ma spacji, jest w formacie .png, nie zawiera polskich znaków, nie zawiera dużych znaków, oraz ma rozmiar mniejszy niż 256`
+{% endhint %}
 
-**4. Ładowanie resourcepacka po dołączeniu na serwer proxy**
+#### **3. Ikonka mimo prawidłowej ścieżki się nie pojawia**
 
-Jeżeli chcesz, aby gracze ładowali texturepack już z poziomu serwera proxy to zainstaluj plugin [forcepack](https://github.com/SamB440/ForcePack/releases). Pozwoli to między innymi na jednoczesne przeładowanie resourcepacka dla każdego gracza na sieci, a nie tylko na konkretnym serwerze.
+{% hint style="info" %}
+**Aby rozwiązać ten problem, sprawdź czy każda z poniższych opcji jest prawidłowo ustawiona:**
+
+* Tekstura nie posiada w nazwie spacji
+* Tekstura jest w formacie .png
+* Tekstura w nazwie nie posiada polskich znaków
+* Tekstura w nazwie nie posiada dużych znaków
+* Tekstura ma rozmiar nie większy niż 256x256
+{% endhint %}
+{% endstep %}
+{% endstepper %}
 
 ## Poradnik do tworzenia custom gui
 
@@ -163,7 +195,4 @@ Jeżeli chcesz, aby gracze ładowali texturepack już z poziomu serwera proxy to
         },
 ```
 
-{% embed url="https://github.com/jakmar06/resourcepack-minecraft/releases/tag/v.1.0.0_Prefix" %}
-Link do gotowych assetów
-{% endembed %}
-
+Poradnik jest w trakcie tworzenia.

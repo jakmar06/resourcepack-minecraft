@@ -35,7 +35,7 @@ Zalecane również jest włączenie wymogu pobrania resourcepacka, ponieważ gra
 {% step %}
 ### Dodaj tekstury do Resource Packa
 
-Gotową teksturę umieść **dokładnie w poniższej ścieżce**:
+Gotową teksturę umieść **w poniższej ścieżce**:
 
 {% code fullWidth="false" %}
 ```yaml
