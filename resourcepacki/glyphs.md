@@ -176,6 +176,8 @@ Jeżeli gracze odkryją twój custom znak, będą mogli go wysłać na chat co b
 * Tekstura w nazwie nie posiada polskich znaków
 * Tekstura w nazwie nie posiada dużych znaków
 * Tekstura ma rozmiar nie większy niż 256x256
+* Podajesz prawidłową ścieżke do tekstury
+* W przypadku użycia innej nazwy/namespace dla pliku font zdefiniowałeś go za pomocą formatu minimessage.
 {% endhint %}
 {% endstep %}
 {% endstepper %}
