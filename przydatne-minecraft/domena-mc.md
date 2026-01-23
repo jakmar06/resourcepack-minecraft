@@ -39,7 +39,8 @@ W tym polu wpisz **ip numeryczne** twojego serwera. Ip znajdziesz w panelu hosti
 
 {% step %}
 {% hint style="warning" %}
-Niektóre hostingi oferują subdomeny, w takim przypadku zalecane jest pominięcie tworzenia rekordu A. Wystarczy jedynie w rekordzie SRV w zakładce "target" ustawić twoją subdomene.
+Niektóre hostingi oferują subdomeny, w takim przypadku zalecane jest pominięcie tworzenia rekordu A. Wystarczy jedynie w rekordzie SRV w zakładce "target" ustawić twoją subdomene.\
+Gdy posiadasz pełny dostęp do ip: np masz dedyka/vps, wystarczy ustawić dla serwera minecraft port 25565 i ominąć krok z ustawieniem rekordu SRV.
 {% endhint %}
 
 ### Tworzenie i konfiguracja rekordu SRV
