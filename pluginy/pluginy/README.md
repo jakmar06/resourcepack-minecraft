@@ -9,7 +9,11 @@ icon: ballot
 
 ## Podstawa Serwera
 
-1. EssentialsX - [https://essentialsx.net/downloads.html](https://essentialsx.net/downloads.html)
+{% stepper %}
+{% step %}
+### EssentialsX
+
+Pobierz:  [https://essentialsx.net/downloads.html](https://essentialsx.net/downloads.html)
 
 {% hint style="info" %}
 Core pod twój serwer, posiada większość podstawowych funkcji, przykładowo: obsługa ekonomii vault, czy vanish.
@@ -21,6 +25,8 @@ Wymagania:&#x20;
 * Minimalna wersja serwera: 1.19.4
 * Java 17
 {% endhint %}
+{% endstep %}
+{% endstepper %}
 
 2. Akropolis - [https://modrinth.com/plugin/akropolis](https://modrinth.com/plugin/akropolis/versions)
 
