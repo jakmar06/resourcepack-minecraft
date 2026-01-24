@@ -68,7 +68,7 @@ Pozwala wybrać tryb przesyłu UUID oraz adresów IP dołączających graczy mi�
 **Zalecane**: "MODERN"
 
 **\[servers]**\
-Tutaj możesz dodać swoje serwery Minecraft. Pamiętaj by NIE używać tutaj publicznego adresu ip, tylko adres lokalny/wewnętrzny. Więcej informacji na ten temat znajdziesz w sekcji [Networking](https://github.com/Helios3991/konfiguracja-serwera-proxy#5-networking). Port możesz użyć dowolny, pod warunkiem, że nie jest on zajęty przez inny proces i masz do niego dostęp. Port w tej sekcji musi być taki sam jak port w pliku server.properties wybranego serwera Minecraft. Znajduje się tutaj także opcja 'try', w której możesz ustawić serwer, na który gracz będzie przenoszony po dołączeniu przez serwer proxy (najczęściej używana dla serwera Lobby).
+Tutaj możesz dodać swoje serwery Minecraft. Pamiętaj by NIE używać tutaj publicznego adresu ip, tylko adres lokalny/wewnętrzny. Więcej informacji na ten temat znajdziesz w sekcji [Networking](konfiguracja-serwera-proxy.md#id-5.-networking). Port możesz użyć dowolny, pod warunkiem, że nie jest on zajęty przez inny proces i masz do niego dostęp. Port w tej sekcji musi być taki sam jak port w pliku server.properties wybranego serwera Minecraft. Znajduje się tutaj także opcja 'try', w której możesz ustawić serwer, na który gracz będzie przenoszony po dołączeniu przez serwer proxy (najczęściej używana dla serwera Lobby).
 
 **\[forced-hosts]**\
 Możesz tutaj ustawić połączenia pomijające serwer lobby zależnie od podanej subdomeny. Wymagane są odpowiednie ustawienia domeny. Jeśli z tego nie korzystasz, usuń całą zawartość tej opcji.\
