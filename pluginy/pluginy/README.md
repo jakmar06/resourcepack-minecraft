@@ -61,7 +61,7 @@ Wymagania:
 * Java 21
 {% endhint %}
 
-5. FastAsycWorldEdit - [https://modrinth.com/plugin/fastasyncworldedit](https://modrinth.com/plugin/fastasyncworldedit)
+5. FastAsyncWorldEdit - [https://modrinth.com/plugin/fastasyncworldedit](https://modrinth.com/plugin/fastasyncworldedit)
 
 {% hint style="info" %}
 Fork WorldEdita do szybkich edycji dużych obszarów, oferujący dodatkowe funkcje dla budowniczych. \
