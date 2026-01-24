@@ -266,3 +266,15 @@ Wymagania:
 * Minimalna wersja serwera 1.8
 * Java 8
 {% endhint %}
+
+{% embed url="https://modrinth.com/plugin/tab-was-taken" %}
+
+{% hint style="info" %}
+Plugin dodający TAB, Scoreboard oraz bossbar, oraz nametagi na twój serwer. Posiada również kilka addonów roszerzającego jego funkcje.
+
+#### Addony:
+
+* TAB bridge - [https://modrinth.com/plugin/tab-bridge](https://modrinth.com/plugin/tab-bridge) (Pozwala na pobranie placeholderów z poziomu proxy)
+* Tab Additions - [https://github.com/Tanguygab/TAB-Additions/releases](https://github.com/Tanguygab/TAB-Additions/releases) (Dodaje dodatkowe funkcjonalości, np actionbar)
+* Scoreboard API - [https://github.com/NEZNAMY/VelocityScoreboardAPI/releases](https://github.com/NEZNAMY/VelocityScoreboardAPI/releases) (Pozwala na dodanie scoreboard gdy plugin jest zainstalowany na proxy)
+{% endhint %}
