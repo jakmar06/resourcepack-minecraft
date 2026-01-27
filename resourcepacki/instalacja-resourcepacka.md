@@ -55,16 +55,18 @@ Server:
 ```
 {% endcode %}
 
+* Przeładuj plugin komendą `/forcepack reload` (na proxy to będzie `/vforcepack reload`)
+
 #### Opcjonalne, zalecane opcje do przełączenia
 
 * forcepack, w podstawowej konfiguracji wykonuje mase komend podczas pobierania resourcepacka, oraz jego ładowania, wyłącz je za pomocą opcji wymienionych poniżej.&#x20;
 
 {% code title="plugins:forcepack/config.yml" %}
-```
+```yaml
   Actions:
-    ## Opcje: DOWNLOADED, FAILED_RELOAD, DISCARDED działają jedynie dla klientów na wersji
-    ## 1.20.3 +, jeżeli chcesz z nich skorzystać zalecam wyłączyć wchodzenie z wersji 
-     ## poniżej w ustawieniach viaversion  
+    ##  Opcje: DOWNLOADED, FAILED_RELOAD, DISCARDED dzialaja jedynie dla klientow
+    ##  na wersji 1.20.3 +, jezeli chcesz z nich skorzystac zalecam wylaczyc 
+    ##  wchodzenie z klienta minecrafta 1.20.2 -, przejdz do konfiguracji viaversion.
     ACCEPTED:
       kick: false
       Commands: []
@@ -89,7 +91,5 @@ Server:
 
 ```
 {% endcode %}
-
-* Przeładuj plugin komendą `/forcepack reload` (na proxy to będzie `/vforcepack reload`)
 {% endstep %}
 {% endstepper %}
