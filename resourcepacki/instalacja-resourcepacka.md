@@ -11,7 +11,7 @@ icon: instalod
 
 {% stepper %}
 {% step %}
-### Instalacja pluginu forcepack
+### Instalacja pluginu forcepack&#x20;
 
 Pierwszym krokiem będzie pobranie pluginu forcepack, pozwoli on na zarządzanie resourepackiem gdy serwer jest włączony. (Możesz również zainstalować go na serwerze proxy)
 
@@ -47,6 +47,46 @@ Server:
       generate-hash: false
       ## Na stronie MCPacks znajdziesz to pod opcja "SHA-1 Hash:"
       hashes: ["abc67aed085220a347e8014d35a142703fed5271"]
+  ## Jezeli pozostawisz ta opcje wlaczana, podczas wejscia na serwer z 
+  ## uprawnieniami .np operatorem czy * nie zaladujesz resourcepacka.
+  ## (domyslnie ustawione jest na true) 
+  bypass-permission: false
+
+```
+{% endcode %}
+
+#### Opcjonalne, zalecane opcje do przełączenia
+
+* forcepack, w podstawowej konfiguracji wykonuje mase komend podczas pobierania resourcepacka, oraz jego ładowania, wyłącz je za pomocą opcji wymienionych poniżej.&#x20;
+
+{% code title="plugins:forcepack/config.yml" %}
+```
+  Actions:
+    ## Opcje: DOWNLOADED, FAILED_RELOAD, DISCARDED działają jedynie dla klientów na wersji
+    ## 1.20.3 +, jeżeli chcesz z nich skorzystać zalecam wyłączyć wchodzenie z wersji 
+     ## poniżej w ustawieniach viaversion  
+    ACCEPTED:
+      kick: false
+      Commands: []
+    DOWNLOADED:
+      kick: true
+      Commands: []   
+    SUCCESSFULLY_LOADED:
+      kick: false
+      Commands: []
+    DECLINED:
+      kick: true
+      Commands: []
+    FAILED_DOWNLOAD:
+      kick: true
+      Commands: []
+    FAILED_RELOAD:
+      kick: true
+      Commands: []
+    DISCARDED:
+      kick: true
+      Commands: []
+
 ```
 {% endcode %}
 

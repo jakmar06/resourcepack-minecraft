@@ -100,7 +100,7 @@ Strona z przykładowymi znakami
 {% endcode %}
 
 {% hint style="info" %}
-* Gdy umieścisz custom znaki w innym folderze niż `minecraft` może to być problematyczne gdy twój plugin nie ma wsparcia formatowania wiadomości [**minimessage**](https://docs.papermc.io/adventure/minimessage/format/#font), ponieważ nie będą one działać do momentu póki nie zdefinujesz ścieżki.&#x20;
+* Gdy umieścisz plik definicji w innym folderze niż `minecraft` może to być problematyczne gdy twój plugin nie ma wsparcia formatowania wiadomości [**minimessage**](https://docs.papermc.io/adventure/minimessage/format/#font), ponieważ nie będą one działać do momentu póki nie zdefinujesz ścieżki.&#x20;
 * `twoja_nazwa.json` W tym pliku przydzielasz custom teksture dla znaku, pamiętaj że jak w przypadku namespace nie znajduje się on w folderze `minecraft` oraz nie jest nazwany `default.json` to będziesz musiał zdefiniować śćieżkę używająć formatu [**minimessage**](https://docs.papermc.io/adventure/minimessage/format/#font)**.**
 * `twoja_nazwa` to dodatkowy folder w folderze `textures`, gdy go nie posiadasz podajesz po prostu `twoj_namespace:twoja_tekstura`
 {% endhint %}
