@@ -13,7 +13,7 @@ icon: star-exclamation
 
 Przejdź do zakładki **Records** w kategorii **DNS**.
 
-<figure><img src="../.gitbook/assets/obraz.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/obraz (1).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -21,7 +21,7 @@ Przejdź do zakładki **Records** w kategorii **DNS**.
 
 Stwórz nowy rekord typu A
 
-<figure><img src="../.gitbook/assets/obraz (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/obraz (1) (1).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
