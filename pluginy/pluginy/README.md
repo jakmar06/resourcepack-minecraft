@@ -403,7 +403,7 @@ Plugin do zarządzania texturepackiem na twoim serwerze, oraz dodający funckjon
 
 * ItemsAdder - [https://polymart.org/product/1851/itemsadder](https://polymart.org/product/1851/itemsadder) (Dużym minusem jest działanie na protcolibie i słaby support)
 * Crucible - [https://mythiccraft.io/index.php?resources/crucible-custom-items-armor-furniture-blocks-more.2/](https://mythiccraft.io/index.php?resources/crucible-custom-items-armor-furniture-blocks-more.2/)
-* CraftEngine - [https://modrinth.com/plugin/craftengine](https://modrinth.com/plugin/craftengine)
+* CraftEngine - [https://polymart.org/product/7624/craftengine](https://polymart.org/product/7624/craftengine) / [https://modrinth.com/plugin/craftengine](https://modrinth.com/plugin/craftengine)&#x20;
 {% endhint %}
 
 ## Ekonomia
