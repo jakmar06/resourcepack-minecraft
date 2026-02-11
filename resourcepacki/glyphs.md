@@ -208,6 +208,6 @@ W twoim pliku z fontami musisz umieścić poniższy fragment, on pozwoli tobie n
 {% step %}
 ### Przygotuj strukture pod twoje gui
 
-Bardzo dużo osób przygotowuje texture gui w inny sposób, dlatego uważam, że zrobienie tego poradnika tak by każdemu dopasować nie ma sensu bo musiałbym to tłumaczyć w inny sposób, najlepiej jest sugerować się poradnikiem pod custom prefixy i odpowiednio dostosować wartości **ascent**, oraz **height**. Jak ktoś zrozumiał poradnik na tworzenie prefixów to i zrozumie to, w razie problemów będe w stanie pomóc indywidualnie na discordzie.<br>
+Bardzo dużo osób przygotowuje texture gui w inny sposób, dlatego uważam, że zrobienie tego poradnika tak by każdemu dopasować nie ma sensu, bo musiałbym to każdemu tłumaczyć w inny sposób, najlepiej jest sugerować się poradnikiem pod custom prefixy i odpowiednio dostosować wartości **ascent**, oraz **height**. Jak ktoś zrozumiał poradnik na tworzenie prefixów to i zrozumie to, w razie problemów będe w stanie pomóc indywidualnie na discordzie.<br>
 {% endstep %}
 {% endstepper %}
