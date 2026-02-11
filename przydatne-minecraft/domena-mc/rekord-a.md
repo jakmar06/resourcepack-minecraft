@@ -19,9 +19,9 @@ Przejdź do zakładki **Records** w kategorii **DNS**.
 {% step %}
 ### Tworzenie rekordu
 
-Stwórz nowy rekord typu A
+Stwórz nowy rekord typu **A**
 
-<figure><img src="../../.gitbook/assets/obraz (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/obraz (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -34,7 +34,7 @@ Jako nazwę rekordu zaleca się ustawić znak: `@` Lub wpisać pełną nazwę sw
 **IPv4 Address**\
 W tym polu wpisz **ip numeryczne** twojego serwera. Ip znajdziesz w panelu hostingu, zazwyczaj w zakładce z konsolą serwera np. `2137.420.69.67`
 
-<figure><img src="../../.gitbook/assets/obraz.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/obraz (3).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}

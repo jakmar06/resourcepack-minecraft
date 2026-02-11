@@ -17,9 +17,9 @@ Przejdź do zakładki **Records** w kategorii **DNS**.
 {% endstep %}
 
 {% step %}
-### Tworzenie i konfiguracja rekordu SRV
+### Tworzenie rekordu
 
-Stwórz nowy rekord typu CNAME
+Stwórz nowy rekord typu **CNAME**
 
 <figure><img src="../../.gitbook/assets/cloudflare-create-rekord-cname.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
@@ -52,7 +52,8 @@ W moim przypadku targetem jest: `pl06.icehost.pl`&#x20;
 Jeżeli wykonałeś wszystko poprawnie powinieneś móc połączyć się już z twoim serwerem.
 
 {% hint style="danger" %}
-Pamiętaj, że wymagane przy rekordzie typu CNAME jest to, żeby serwer miał domyślnie ustawiony port 25565, w innym wypadku nie uda ci się połączyć z serwerem.
+Pamiętaj, że wymagane przy rekordzie typu CNAME jest to, żeby serwer miał domyślnie ustawiony port 25565, w innym wypadku nie uda ci się połączyć z serwerem.\
+Przykładami hostingów na których otrzymujesz dedykowany adres ip są: [https://bloom.host/](https://bloom.host/) czy [https://pufferfish.host/](https://pufferfish.host/)
 {% endhint %}
 
 {% hint style="warning" %}
@@ -60,3 +61,4 @@ Czasami podpięcie domeny może zająć dłuższy okres czasu (czasem nawet 48 g
 {% endhint %}
 {% endstep %}
 {% endstepper %}
+

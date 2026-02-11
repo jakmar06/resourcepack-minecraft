@@ -17,9 +17,19 @@ Przejdź do zakładki **Records** w kategorii **DNS**.
 {% endstep %}
 
 {% step %}
-### Tworzenie i konfiguracja rekordu SRV
+### Tworzenie rekordu
 
-Kolejnym krokiem jest utworzenie nowego rekordu **SRV**, który umożliwi poprawne przekierowanie domeny na serwer Minecraft.\
+Stwórz nowy rekord typu **SRV**
+
+<figure><img src="../../.gitbook/assets/cloudflare-create-rekord-srv.png" alt=""><figcaption></figcaption></figure>
+{% endstep %}
+
+{% step %}
+### Ustawianie rekordu typu SRV
+
+Po utworzeniu rekordu typu **SRV** należy poprawnie skonfigurować jego parametry.
+
+\
 **Name**\
 Wpisz: `_minecraft._tcp` \
 **Priority**\
@@ -36,13 +46,13 @@ Wpisz port twojego serwera. Port znajdziesz w panelu hostingu, zazwyczaj w zakł
 
 {% step %}
 **Target**\
-W tym polu wpisz ip twojego serwera. Ip znajdziesz w panelu hostingu, zazwyczaj w zakładce z konsolą serwera np. `pl06.icehost.pl`&#x20;
+W tym polu wpisz **ip** twojego serwera. Ip znajdziesz w panelu hostingu, zazwyczaj w zakładce z konsolą serwera np. `pl06.icehost.pl`
 
 {% hint style="info" %}
 W moim przypadku targetem jest: `pl06.icehost.pl`&#x20;
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/cloudflare-create-rekord-srv (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/obraz (2).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
