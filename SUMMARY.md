@@ -24,4 +24,5 @@
 * [Gamerule minecraft (1.21.11)](przydatne-minecraft/gamerule.md)
 * [Podłączanie domeny do serwera Minecraft (stare)](przydatne-minecraft/domena-old.md)
 * [Podłączenie domeny do serwera minecraft](przydatne-minecraft/domena-mc/README.md)
+  * [Gdy posiadasz serwer zarządzany z współdzielonym ip](przydatne-minecraft/domena-mc/rekord-srv.md)
   * [Gdy posiadasz VPS/DEDYKA](przydatne-minecraft/domena-mc/rekord-a.md)

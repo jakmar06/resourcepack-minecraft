@@ -11,9 +11,9 @@ description: >-
 {% step %}
 ### Strefa DNS
 
-Przejdź do zakładki **Records** w kategorii **DNS**.<br>
+Przejdź do zakładki **Records** w kategorii **DNS**.
 
-<figure><img src="../../.gitbook/assets/obraz (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/cloudflare-records.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
