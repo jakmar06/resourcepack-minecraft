@@ -185,9 +185,15 @@ Jeżeli gracze odkryją twój custom znak, będą mogli go wysłać na chat co b
 
 ## Poradnik do tworzenia custom gui
 
-1. Jak cofnąć w lewo twoje gui?
+{% hint style="warning" %}
+Poradnik dotyczy jedynie wersji 1.19.4 +, na niższych wersjach gracze zobaczą nie przesunięty znak "ベ"
+{% endhint %}
 
-`Wklej ten fragment do twojego pliku z niestandardowymi fontami i ustaw "ベ" przed znakiem od gui`
+{% stepper %}
+{% step %}
+### Jak cofnąć w lewo twoje gui?
+
+W twoim pliku z fontami musisz umieścić poniższy fragment, on pozwoli tobie na przesunięcie gui 8 pixeli w lewo.<br>
 
 ```json
         {
@@ -197,5 +203,11 @@ Jeżeli gracze odkryją twój custom znak, będą mogli go wysłać na chat co b
             }
         },
 ```
+{% endstep %}
 
-Poradnik jest w trakcie tworzenia.
+{% step %}
+### Przygotuj strukture pod twoje gui
+
+Bardzo dużo osób przygotowuje texture gui w inny sposób, dlatego uważam, że zrobienie tego poradnika tak by każdemu dopasować nie ma sensu bo musiałbym to tłumaczyć w inny sposób, najlepiej jest sugerować się poradnikiem pod custom prefixy i odpowiednio dostosować wartości **ascent**, oraz **height**. Jak ktoś zrozumiał poradnik na tworzenie prefixów to i zrozumie to, w razie problemów będe w stanie pomóc indywidualnie na discordzie.<br>
+{% endstep %}
+{% endstepper %}
