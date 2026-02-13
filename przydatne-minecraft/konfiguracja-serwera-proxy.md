@@ -5,23 +5,6 @@ description: >-
 icon: paper-plane
 cover: ../.gitbook/assets/velocity.png
 coverY: -39.873417721519
-layout:
-  width: default
-  cover:
-    visible: true
-    size: full
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
 ---
 
 # Konfiguracja Serwera Proxy
