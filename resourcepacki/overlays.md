@@ -20,5 +20,3 @@ Minecraft na przestrzeni lat zmieniał strukturę plików, czy to poprzez zmian�
 Overlays zostało stworzone specjalnie po to, by naprawić ten problem, overlays zależnie od wersji uruchamia dany plik.
 
 ***
-
-Tej części poradnika jeszcze nie ma!

@@ -60,3 +60,18 @@ settings:
   allow-end: false
 ```
 {% endcode %}
+
+## Kolizje
+
+***
+
+#### Jak wyłączyć kolizje?
+
+* Kolizje wyłączasz w konfiguracji papera.
+
+{% code title="config/paper-global.yml" %}
+```yml
+collisions:
+  enable-player-collisions: false
+```
+{% endcode %}
