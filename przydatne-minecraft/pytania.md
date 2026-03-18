@@ -75,3 +75,18 @@ collisions:
   enable-player-collisions: false
 ```
 {% endcode %}
+
+## Pusty świat
+
+***
+
+#### Jak zrobić pusty świat? (Void)
+
+* Pusty świat ustawiasz w głównej konfiguracji  serwera.
+
+{% code title="server.properties" %}
+```yml
+level-type=minecraft\:flat
+generator-settings={"biome"\:"minecraft\:the_void","layers"\:[]}
+```
+{% endcode %}
