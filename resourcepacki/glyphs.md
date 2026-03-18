@@ -50,7 +50,7 @@ Gotowe tekstury umieść w niżej wymienionej śćieżce
 ```
 
 {% hint style="info" %}
-* `twoj_namespace` to główny folder twoje resourcepacka, w podstawowym resourcepacku nazywa się to `minecraft`.
+* `twoj_namespace` to główny folder twojego resourcepacka, w podstawowym resourcepacku nazywa się to `minecraft`.
 {% endhint %}
 {% endstep %}
 
