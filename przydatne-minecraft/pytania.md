@@ -90,3 +90,13 @@ level-type=minecraft\:flat
 generator-settings={"biome"\:"minecraft\:the_void","layers"\:[]}
 ```
 {% endcode %}
+
+***
+
+#### Jak dodać ikone dla twojego serwera?
+
+* Aby dodać ikone dla twojego serwera, stwórz logo o wymiarach maksymalnie 64x64 oraz nazwij go `server-icon.png`
+
+Poniżej podsyłam stronę, która przekonwertuje twoje logo do prawidłowych rozmiarów
+
+{% embed url="https://mcutils.com/server-icon-converter" %}
