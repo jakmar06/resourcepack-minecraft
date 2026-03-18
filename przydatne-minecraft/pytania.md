@@ -91,6 +91,8 @@ generator-settings={"biome"\:"minecraft\:the_void","layers"\:[]}
 ```
 {% endcode %}
 
+## Ikona serwera
+
 ***
 
 #### Jak dodać ikone dla twojego serwera?
