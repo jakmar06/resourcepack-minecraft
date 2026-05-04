@@ -11,7 +11,7 @@ icon: instalod
 
 {% stepper %}
 {% step %}
-### Instalacja pluginu forcepack&#x20;
+### Instalacja pluginu forcepack &#x20;
 
 Pierwszym krokiem będzie pobranie pluginu forcepack, pozwoli on na zarządzanie resourepackiem gdy serwer jest włączony. (Możesz również zainstalować go na serwerze proxy)
 
@@ -42,9 +42,10 @@ Pamiętaj, by twój resourcepack znajdował się w pliku `.zip`, oraz żeby zawi
 Server:
   packs:
     all:
-      ## Na stronie MCPacksznajdziesz to pod opcja "Download URL:"
-      urls: ["https://download.mc-packs.net/pack/abc67aed085220a347e8014d35a142703fed5271.zip"]
-      generate-hash: false
+      ## Na stronie MCPacks znajdziesz to pod opcja "Download URL:" 
+      urls: ["https://download.mc-packs.net/pack/abc67aed085220a347e8014d35a142703fed5271.zip"] 
+      # Zalecane ustawienie na true, gdy masz ta opcje wlaczona, nie musisz recznie podawac hashu
+      generate-hash: true 
       ## Na stronie MCPacks znajdziesz to pod opcja "SHA-1 Hash:"
       hashes: ["abc67aed085220a347e8014d35a142703fed5271"]
   ## Jezeli pozostawisz ta opcje wlaczana, podczas wejscia na serwer z 
