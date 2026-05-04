@@ -8,6 +8,8 @@ coverY: 0
 
 ## Konfiguracja pluginu
 
+x
+
 {% code title="plugins/CarbonChat/config.conf" %}
 ```yaml
 # Pozwala developerowi określić poziom configu, dzięki czemu przy aktualizacji pluginu gdy 
