@@ -35,14 +35,12 @@ Gdy plugin jest pobrany na proxy wysyłanie informacji o przedmiotach jest niedo
 
 ## Placeholdery ([miniplaceholders](https://modrinth.com/plugin/miniplaceholders))
 
-|            Placeholder            |                                    Opis                                   |
-| :-------------------------------: | :-----------------------------------------------------------------------: |
-|        \<carbonchat\_party>       |                       Zwraca czy gracz jest w party                       |
-|      \<carbonchat\_nickname>      |                             Zwraca nick gracza                            |
-|     \<carbonchat\_displayname>    |                       Zwraca wyświetalny nick gracza                      |
-|    \<carbonchat\_channel\_key>    |                     Zwraca aktualny kanał chatu gracza                    |
-|   \<carbonchat\_nickname\_plain>  |                    Zwraca nick gracza bez formatowania                    |
-| \<carbonchat\_displayname\_plain> | [Zwraca wyświetalny nick gracza](#user-content-fn-1)[^1] bez formatowania |
+|         Placeholder         |                Opis                |
+| :-------------------------: | :--------------------------------: |
+|     \<carbonchat\_party>    |    Zwraca czy gracz jest w party   |
+|   \<carbonchat\_nickname>   |         Zwraca nick gracza         |
+|  \<carbonchat\_displayname> |   Zwraca wyświetalny nick gracza   |
+| \<carbonchat\_channel\_key> | Zwraca aktualny kanał chatu gracza |
 
 ## Placeholdery referencyjne
 
