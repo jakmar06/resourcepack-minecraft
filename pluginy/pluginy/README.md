@@ -437,6 +437,13 @@ Plugin dodający ekonomie na twój serwer, wspierający vaultunlocked.
 * Polyconomy - [https://hangar.papermc.io/ArcanePlugins/Polyconomy](https://hangar.papermc.io/ArcanePlugins/Polyconomy)
 {% endhint %}
 
+{% hint style="warning" %}
+Wymagania:&#x20;
+
+* Minimalna wersja serwera 1.21
+* Java 21
+{% endhint %}
+
 2. Shopkeepers - [https://www.spigotmc.org/resources/shopkeepers.80756/](https://www.spigotmc.org/resources/shopkeepers.80756/)
 
 {% hint style="info" %}
