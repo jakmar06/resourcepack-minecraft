@@ -425,13 +425,14 @@ Wymagania:&#x20;
 * Java 8
 {% endhint %}
 
-2. TheNewEconomy - [https://modrinth.com/plugin/tne/versions](https://modrinth.com/plugin/tne/versions)
+2. LiteEco - [https://hangar.papermc.io/EncryptSL/LiteEco](https://hangar.papermc.io/EncryptSL/LiteEco)
 
 {% hint style="info" %}
 Plugin dodający ekonomie na twój serwer, wspierający vaultunlocked.
 
 #### Zamienniki:
 
+* TheNewEconomy - [https://modrinth.com/plugin/tne/](https://modrinth.com/plugin/tne/versions)
 * EssentialsX - [https://essentialsx.net/downloads](https://essentialsx.net/downloads)
 * Polyconomy - [https://hangar.papermc.io/ArcanePlugins/Polyconomy](https://hangar.papermc.io/ArcanePlugins/Polyconomy)
 {% endhint %}
