@@ -145,7 +145,7 @@ Aktywnie rozwijany plugin do tworzenia skrzynek z nagrodami.
 {% hint style="warning" %}
 Wymagania:&#x20;
 
-* Minimalna wersja serwera 1.21.8
+* Minimalna wersja serwera 1.21.11
 * Java 21
 {% endhint %}
 
@@ -167,14 +167,18 @@ Wymagania:
 13. FancyNpcs - [https://modrinth.com/plugin/fancynpcs/versions](https://modrinth.com/plugin/fancynpcs/versions)
 
 {% hint style="info" %}
-Plugin do tworzenia npc, używanych np. do przenioszenia na serwer na lobby, czy do otwierania gui.
+Plugin do tworzenia npc, używanych np. do przenioszenia na serwer na lobby, czy do otwierania gui.<br>
+
+#### Addony:
+
+* FancyNpcsModel - [https://hangar.papermc.io/Oliver/FancyNpcsModel](https://hangar.papermc.io/Oliver/FancyNpcsModel) (Pozwala używać niestandardowych modeli z pluginu BetterModel)
 {% endhint %}
 
 {% hint style="warning" %}
 Wymagania:&#x20;
 
-* Minimalna wersja serwera 1.21
-* Java 21
+* Minimalna wersja serwera 1.21.5
+* Java 25
 {% endhint %}
 
 14. ZnpcsPlus2 - [https://modrinth.com/plugin/znpcsplus](https://modrinth.com/plugin/znpcsplus) lub [https://ci.pyr.lol/job/ZNPCsPlus/](https://ci.pyr.lol/job/ZNPCsPlus/)
@@ -205,7 +209,7 @@ Plugin do tworzenia npc, używanych np. do przenioszenia na serwer na lobby, czy
 {% hint style="warning" %}
 Wymagania:&#x20;
 
-* Minimalna wersja serwera 1.21.11
+* Minimalna wersja serwera 1.21.6
 * Java 21
 {% endhint %}
 
@@ -224,8 +228,8 @@ Plugin do zarządzania hologramami, przydatny np do oznaczania miejsc, czy topek
 {% hint style="warning" %}
 Wymagania:&#x20;
 
-* Minimalna wersja serwera: 1.21
-* Java 21
+* Minimalna wersja serwera: 1.21.5
+* Java 25
 {% endhint %}
 
 17. DecentHolograms - [https://modrinth.com/plugin/decentholograms](https://modrinth.com/plugin/decentholograms)
