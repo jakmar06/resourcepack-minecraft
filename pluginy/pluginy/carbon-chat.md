@@ -94,22 +94,22 @@ default-channel="carbon:global"
 # Powraca do domyślnego kanału po użyciu komendy kanału, gdy masz aktywny ten kanał.
 return-to-default-channel=false
 # Usługa używana do zapisywania i wczytywania danych graczy.
-# Jedno z: JSON, H2, MYSQL, PSQL
+# Dostępne typy bazy: JSON, H2, MYSQL, PSQL
 # Uwaga: Jeśli wybierzesz MYSQL lub PSQL, upewnij się, że skonfigurowałeś sekcję "database-settings" w tym pliku!
 storage-type=JSON
 # Gdy "storage-type" jest ustawione na MYSQL lub PSQL, ta sekcja konfiguruje połączenie z bazą danych.
 # Jeśli używane jest JSON lub H2, tę sekcję można zignorować.
 database-settings {
-    # URL JDBC. Sugerowane domyślne wartości dla każdej bazy:
+    # URL JDBC. Sugerowane wartości dla każdej bazy:
     # MySQL: jdbc:mysql://host:3306/DB
     # MariaDB: jdbc:mariadb://host:3306/DB
     # PostgreSQL: jdbc:postgresql://host:5432/database
     url="jdbc:mysql://localhost:3306/carbon"
-    # Nazwa użytkownika połączenia.
+    # Nazwa użytkownika.
     username=username
-    # Hasło połączenia.
+    # Hasło.
     password=password
-    # Ustawienia puli połączeń. Jest to zaawansowana konfiguracja, której większość użytkowników nie musi zmieniać.
+    # Ustawienia puli połączeń. Jest to zaawansowana konfiguracja, której nie zaleca się ruszać.
     connection-pool {
         maximum-pool-size=8
         minimum-idle=8
@@ -120,7 +120,7 @@ database-settings {
 }
 # Ustawienia wiadomości między serwerami
 messaging-settings {
-    # Czy wiadomości między serwerami są włączone
+    # Czy wiadomości między serwerami są włączone 
     enabled=false
     # Jedno z: RABBITMQ, NATS, REDIS
     broker-type=NONE
@@ -138,7 +138,7 @@ messaging-settings {
 nickname-settings {
     # Czy ma być używany system nicków Carbon. Wyłącz to, jeśli chcesz używać innego pluginu do zarządzania nickami.
     use-carbon-nicknames=true
-    # Tylko Paper. Aktualizuje nazwę gracza na tabliście tak, aby odpowiadała jego nickowi.
+    # Aktualizuje nazwę gracza na tabie tak, aby odpowiadała jego nickowi. (Funkcja działa jedynie na paperze..)
     update-tab-list=true
     # Minimalna liczba znaków w nicku (bez formatowania).
     min-length=3
@@ -156,7 +156,7 @@ nickname-settings {
     skip-format-when-name-matches=true
 }
 # Własne placeholdery dla całego pluginu.
-# Będą one parsowane we wszystkich renderowanych i wysyłanych wiadomościach przez Carbon.
+# Będą one parsowane we wszystkich wysyłanych wiadomościach przez CarbonChat.
 # Obejmuje to czat, informacje zwrotne komend i inne.
 # Upewnij się, że zamykasz tagi, aby nie przenikały do innych formatów.
 # Wykonywane jest tylko jedno przejście, więc własne placeholdery nie będą działały wewnątrz siebie nawzajem.
