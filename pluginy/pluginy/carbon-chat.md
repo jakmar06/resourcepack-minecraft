@@ -83,7 +83,7 @@ Gdy plugin jest pobrany na proxy wysyłanie informacji o przedmiotach jest niedo
 ## Konfiguracja
 
 {% code title="plugins:CarbonChat/config.conf" %}
-```yml
+```json5
 # Used internally to track changes to the config. Do not edit manually!
 config-version=1
 # Domyślny język wiadomości pluginu.
