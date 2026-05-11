@@ -80,6 +80,171 @@ Gdy plugin jest pobrany na proxy wysyłanie informacji o przedmiotach jest niedo
 
 <table><thead><tr><th>Funkcje</th><th align="center">CarbonChat</th><th align="center">Essentials Chat</th><th align="center" valign="middle">LPC</th></tr></thead><tbody><tr><td>Wspierane platformy</td><td align="center">paper, folia, fabric, velocity</td><td align="center">spigot, paper</td><td align="center" valign="middle">spigot, paper</td></tr><tr><td>Wspierane wersje</td><td align="center">1.21.4+</td><td align="center">1.8.9+</td><td align="center" valign="middle">1.7.10+</td></tr><tr><td><a data-footnote-ref href="#user-content-fn-2">Cross Server </a></td><td align="center">✅</td><td align="center">❌</td><td align="center" valign="middle">💰</td></tr><tr><td>Kanały Chatu</td><td align="center">✅</td><td align="center">❌</td><td align="center" valign="middle">💰</td></tr><tr><td><a data-footnote-ref href="#user-content-fn-3">Multi-language</a></td><td align="center">✅</td><td align="center">❌</td><td align="center" valign="middle">❌</td></tr><tr><td><a data-footnote-ref href="#user-content-fn-4">Chat Radius</a></td><td align="center">✅</td><td align="center">❌</td><td align="center" valign="middle">❌</td></tr><tr><td>Party chat</td><td align="center">✅</td><td align="center">❌</td><td align="center" valign="middle">❌</td></tr><tr><td>Custom Kanały</td><td align="center">Towny,FactionsUUID, mcMMO</td><td align="center">❌</td><td align="center" valign="middle">❌</td></tr><tr><td>QuickPrefix</td><td align="center">✅</td><td align="center">❌</td><td align="center" valign="middle">💰</td></tr><tr><td>ItemLinking</td><td align="center">✅</td><td align="center">❌</td><td align="center" valign="middle">❌</td></tr><tr><td>Group Format</td><td align="center">✅</td><td align="center">✅</td><td align="center" valign="middle">✅</td></tr><tr><td>Placeholderapi support</td><td align="center">✅</td><td align="center">❌</td><td align="center" valign="middle">✅</td></tr><tr><td>Miniplaceholders support</td><td align="center">✅</td><td align="center">❌</td><td align="center" valign="middle">❌</td></tr><tr><td>Placeholdery</td><td align="center"><a href="carbon-chat.md#placeholdery-placeholderapi">zobacz liste</a></td><td align="center"><a href="https://essentialsx.net/wiki/keywords">zobacz liste</a></td><td align="center" valign="middle">✅</td></tr><tr><td><a data-footnote-ref href="#user-content-fn-5">Placeholdery referecyjne</a></td><td align="center"><a href="carbon-chat.md#placeholdery-referencyjne">zobacz liste</a></td><td align="center"><a href="https://essentialsx.net/wiki/keywords">zobacz liste</a></td><td align="center" valign="middle">✅</td></tr><tr><td>DiscordSRV support</td><td align="center">✅</td><td align="center">❌</td><td align="center" valign="middle">💰</td></tr><tr><td>EssentialsXDiscord</td><td align="center">✅</td><td align="center">✅</td><td align="center" valign="middle">❌</td></tr><tr><td>Wspierane formaty</td><td align="center"><a href="https://docs.papermc.io/adventure/minimessage/format/">minimessage</a></td><td align="center">hex colors, legacy</td><td align="center" valign="middle">hex colors, legacy, <a href="https://docs.papermc.io/adventure/minimessage/format/"><mark style="color:$warning;">minimessage</mark></a></td></tr><tr><td>Pingi @gracz</td><td align="center">✅</td><td align="center">❌</td><td align="center" valign="middle">💰</td></tr><tr><td>Format za permisją</td><td align="center">✅</td><td align="center">🟧</td><td align="center" valign="middle">💰</td></tr></tbody></table>
 
+## Konfiguracja
+
+{% code title="plugins:CarbonChat/config.conf" %}
+```yml
+# Used internally to track changes to the config. Do not edit manually!
+config-version=1
+# Domyślny język wiadomości pluginu.
+default-locale="en_US"
+# Domyślny kanał, na którym nowi gracze będą po dołączeniu.
+# Jeśli kanał nie zostanie znaleziony lub gracz nie może go używać, będzie pisać na zwykłym czacie bez kanału.
+default-channel="carbon:global"
+# Powraca do domyślnego kanału po użyciu komendy kanału, gdy masz aktywny ten kanał.
+return-to-default-channel=false
+# Usługa używana do zapisywania i wczytywania danych graczy.
+# Jedno z: JSON, H2, MYSQL, PSQL
+# Uwaga: Jeśli wybierzesz MYSQL lub PSQL, upewnij się, że skonfigurowałeś sekcję "database-settings" w tym pliku!
+storage-type=JSON
+# Gdy "storage-type" jest ustawione na MYSQL lub PSQL, ta sekcja konfiguruje połączenie z bazą danych.
+# Jeśli używane jest JSON lub H2, tę sekcję można zignorować.
+database-settings {
+    # URL JDBC. Sugerowane domyślne wartości dla każdej bazy:
+    # MySQL: jdbc:mysql://host:3306/DB
+    # MariaDB: jdbc:mariadb://host:3306/DB
+    # PostgreSQL: jdbc:postgresql://host:5432/database
+    url="jdbc:mysql://localhost:3306/carbon"
+    # Nazwa użytkownika połączenia.
+    username=username
+    # Hasło połączenia.
+    password=password
+    # Ustawienia puli połączeń. Jest to zaawansowana konfiguracja, której większość użytkowników nie musi zmieniać.
+    connection-pool {
+        maximum-pool-size=8
+        minimum-idle=8
+        maximum-lifetime=1800000
+        keepalive-time=0
+        connection-timeout=30000
+    }
+}
+# Ustawienia wiadomości między serwerami
+messaging-settings {
+    # Czy wiadomości między serwerami są włączone
+    enabled=false
+    # Jedno z: RABBITMQ, NATS, REDIS
+    broker-type=NONE
+    url="127.0.0.1"
+    port=5672
+    # RabbitMQ VHost
+    vhost="/"
+    # Plik poświadczeń NATS
+    credentials-file=""
+    # Nazwa użytkownika RabbitMQ
+    username=username
+    # Hasło RabbitMQ i Redis
+    password=password
+}
+nickname-settings {
+    # Czy ma być używany system nicków Carbon. Wyłącz to, jeśli chcesz używać innego pluginu do zarządzania nickami.
+    use-carbon-nicknames=true
+    # Tylko Paper. Aktualizuje nazwę gracza na tabliście tak, aby odpowiadała jego nickowi.
+    update-tab-list=true
+    # Minimalna liczba znaków w nicku (bez formatowania).
+    min-length=3
+    # Maksymalna liczba znaków w nicku (bez formatowania).
+    max-length=16
+    black-list=[
+        notch,
+        admin
+    ]
+    # Wzór regex, który nicki muszą spełniać, aby zostały ustawione. Można ominąć permisją 'carbon.nickname.filter'.
+    filter="^[a-zA-Z0-9_]*$"
+    # Format używany podczas wyświetlania nicków.
+    format="<hover:show_text:'<gray>@</gray><username>'><gray>~</gray><nickname></hover>"
+    # Czy pomijać stosowanie 'format', gdy nick odpowiada nazwie gracza i różni się jedynie dekoracją.
+    skip-format-when-name-matches=true
+}
+# Własne placeholdery dla całego pluginu.
+# Będą one parsowane we wszystkich renderowanych i wysyłanych wiadomościach przez Carbon.
+# Obejmuje to czat, informacje zwrotne komend i inne.
+# Upewnij się, że zamykasz tagi, aby nie przenikały do innych formatów.
+# Wykonywane jest tylko jedno przejście, więc własne placeholdery nie będą działały wewnątrz siebie nawzajem.
+custom-placeholders {}
+# Sugestie wyświetlane po użyciu klawisza TAB na czacie.
+custom-chat-suggestions=[]
+# Placeholdery zamieniane w wiadomościach czatu, to BĘDZIE działać z podglądem wiadomości.
+chat-placeholders {}
+# Podstawowy filtr czatu oparty na regex.
+chat-filter {}
+# Filtr czatu włączany przez gracza. Przydatny dla łagodniejszych wulgaryzmów.
+optional-chat-filter {}
+# Różne ustawienia związane z oznaczaniem graczy w kanałach.
+ping-settings {
+    # Kolor twojej nazwy, gdy inny gracz cię oznaczy.
+    highlight-text-color=yellow
+    prefix="@"
+    play-sound=false
+    name="minecraft:block.anvil.use"
+    source=master
+    volume=1
+    pitch=1
+}
+party-chat {
+    # Czy czat party jest włączony
+    enabled=true
+    expire-invites-after-seconds=45
+    play-sound=false
+    # Dźwięk otrzymania wiadomości party
+    message-sound {
+        name="minecraft:entity.experience_orb.pickup"
+        source=master
+        volume=1
+        pitch=1
+    }
+}
+# Dźwięk otrzymania wiadomości prywatnej
+message-sound {
+    name="minecraft:entity.experience_orb.pickup"
+    source=master
+    volume=1
+    pitch=1
+}
+# Ustawienia komendy czyszczenia czatu
+clear-chat-settings {
+    # Wiadomość wysyłana do każdego gracza.
+    message=""
+    # Liczba razy, ile wiadomość zostanie wysłana do każdego gracza.
+    iterations=50
+    # Wiadomość wysyłana po wyczyszczeniu czatu.
+    broadcast="<gold>Chat has been cleared by </gold><green><display_name><green><gold>."
+}
+# Ustawienia integracji z innymi pluginami/modami. Ustawienia działają tylko, gdy odpowiedni plugin/mod jest obecny.
+integrations {
+    discordsrv {
+        enabled=true
+    }
+    "essentialsx_discord" {
+        enabled=true
+    }
+    factionsuuid {
+        enabled=true
+        faction-channel=true
+        alliance-channel=true
+        truce-channel=true
+        faction-mod-channel=false
+    }
+    mcmmo {
+        enabled=true
+        # Prawdopodobnie będziesz chciał wyłączyć wbudowany system party Carbon powyżej podczas używania czatu party mcMMO.
+        party-channel=true
+    }
+    plotsquared {
+        enabled=true
+        plot-channel=true
+    }
+    towny {
+        enabled=true
+        town-channel=true
+        nation-channel=true
+        alliance-channel=false
+    }
+}
+# Czy Carbon powinien sprawdzać aktualizacje przy uruchamianiu za pomocą GitHub API.
+update-checker=true
+```
+{% endcode %}
+
 ***
 
 {% embed url="https://github.com/Hexaoxide/Carbon/wiki" %}
