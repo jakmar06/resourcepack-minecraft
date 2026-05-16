@@ -473,6 +473,7 @@ Plugin dodający rynek na twój serwer
 #### Zamienniki:
 
 * zAuctionHouse - [https://builtbybit.com/resources/zauctionhouse-auction-house-plugin.8987/](https://builtbybit.com/resources/zauctionhouse-auction-house-plugin.8987/)
+* zAuctionHouse (1 wersja do tyłu) - [https://modrinth.com/plugin/zauctionhouse](https://modrinth.com/plugin/zauctionhouse/changelog)
 {% endhint %}
 
 {% hint style="warning" %}
