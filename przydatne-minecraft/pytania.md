@@ -111,7 +111,7 @@ online-mode=false
 
 #### Jak dodać ikone dla twojego serwera?
 
-* Aby dodać ikone dla twojego serwera, stwórz logo o wymiarach maksymalnie 64x64 oraz nazwij go `server-icon.png`
+* Aby dodać ikone dla twojego serwera, stwórz logo o wymiarach maksymalnie 64x64 oraz nazwij go `server-icon.png`  i wrzucić je do głównego katalogu serwera.
 
 Poniżej podsyłam stronę, która przekonwertuje twoje logo do prawidłowych rozmiarów
 
