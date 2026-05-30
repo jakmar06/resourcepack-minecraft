@@ -91,6 +91,20 @@ generator-settings={"biome"\:"minecraft\:the_void","layers"\:[]}
 ```
 {% endcode %}
 
+## Serwer non-premium
+
+***
+
+#### Jak włączyć non premium na moim serwerze?
+
+* Non premium wyłaczasz w głównej konfiguracji  serwera.
+
+{% code title="server.properties" %}
+```yml
+online-mode=false
+```
+{% endcode %}
+
 ## Ikona serwera
 
 ***
