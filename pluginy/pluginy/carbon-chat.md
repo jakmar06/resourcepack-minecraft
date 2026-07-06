@@ -1,5 +1,6 @@
 ---
 description: W tej sekcji poznasz komendy, permisje i konfiguracje pluginu carbon chat.
+icon: comment-lines
 cover: ../../.gitbook/assets/carbonchat.png
 coverY: 0
 ---

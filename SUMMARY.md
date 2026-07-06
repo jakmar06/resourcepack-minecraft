@@ -8,6 +8,7 @@
 
 * [Zalecane pluginy](pluginy/pluginy/README.md)
   * [Carbon Chat](pluginy/pluginy/carbon-chat.md)
+  * [LibreLoginProd](pluginy/pluginy/libreloginprod.md)
 
 ## Resourcepacki
 
