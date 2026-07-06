@@ -22,6 +22,7 @@
 * [Często zadawane pytania](przydatne-minecraft/pytania.md)
 * [Konfiguracja Serwera Proxy](przydatne-minecraft/konfiguracja-serwera-proxy.md)
 * [Gamerule minecraft (26.1.2)](przydatne-minecraft/gamerule.md)
+* [LibreLoginProd (proxy)](przydatne-minecraft/libreloginprod-proxy.md)
 * [Logowanie Premium](przydatne-minecraft/logowanie-premium.md)
 * [Podłączenie domeny do serwera minecraft](przydatne-minecraft/domena-mc/README.md)
   * [Gdy posiadasz serwer zarządzany z dedykowanym ip](przydatne-minecraft/domena-mc/rekord-cname.md)
