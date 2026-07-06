@@ -87,4 +87,89 @@ try = [
 W przypadku picolimbo, możesz użyć go również jako silnika, wtedy instalujesz go na innym serwerze i konfigurujesz go w taki sam sposób, pamiętając o dodaniu portu wewnętrznego!
 {% endhint %}
 {% endstep %}
+
+{% step %}
+### Pobranie pluginu LibreLoginProd
+
+{% embed url="https://modrinth.com/plugin/libreloginprod" %}
+
+{% embed url="https://github.com/Navio1430/LibreLoginProd/releases/tag/0.25.10" %}
+
+{% hint style="info" %}
+Powyżej podałem 2 linki, ponieważ LibreLoginProd często na githubie ma nowszy build niż na modrinthie.
+{% endhint %}
+{% endstep %}
+
+{% step %}
+### Instalacja, oraz konfiguracja LibreLoginProd
+
+* Umieść plugin `LibreLoginProd` w folderze `plugins`&#x20;
+* Zrestartuj serwer
+* Gdy plugin zainstaluje się na serwerze przejdź do konfguracji velocity, oraz konfiguracji pluginu i zmień poniżej wymienione opcje.
+
+{% tabs %}
+{% tab title="plugins:librelogin/config.conf" %}
+{% code title="plugins:librelogin/config.conf
+
+# tutaj podajesz twoje serwery limbo, które ustawiłeś w konfiguracji velocity." fullWidth="false" %}
+```yaml
+limbo=[
+    limbo
+]
+# tutaj podajesz twoje serwery limbo, które ustawiłeś w konfiguracji velocity.
+lobby {
+    root=[
+        lobby0
+    ]
+}
+## ta opcja odpowiada za tworzenie kont graczy, z uwierzytelnianiem hybdrydowym, czyli graczer 
+## premium będą mieli UUID premium, a gracze non premium będą mieli UUID non premium.
+new-uuid-creator=MOJANG
+
+## ta opcja odpowiada za automatyczne rejestrowanie graczy premium.
+auto-register=true
+
+## Jeżeli ta opcja jest włączona, gracze po restarcie serwera zostaną przeniesieni na serwer lobby.
+fallback=false 
+```
+{% endcode %}
+{% endtab %}
+
+{% tab title="velocity.toml" %}
+{% code title="home:velocity.toml" fullWidth="false" %}
+```yaml
+## tutaj ustawiasz port dla twojego serwera proxy
+bind = "0.0.0.0:25565" 
+## tutaj ustawiasz nowoczesny typ przesyłu danych "modern", który działa dla serwerów 1.13+ 
+player-info-forwarding-mode = "modern"
+## tutaj musisz wyłaczyć online mode, by gracze non premium mogli się łączyć z twoim serwerem
+online-mode = false
+
+## Tutaj, dodajesz twoje serwery do proxy 
+## pamiętaj, by serwery miały adres wewnętrzny! 
+[servers]
+limbo = "10.49.9.37:18000"
+lobby = "10.49.9.37:30066"
+
+## Tutaj podajesz serwery, na który mają się łączyć gracze po restarcie trybu, najlepiej w przypadku braku 
+## kolejki dodać tutaj sam serwer lobby, ponieważ po restarcie gracze nie będą mogli ponownie wrócic na tryb.
+try = [
+    "lobby"
+]
+```
+{% endcode %}
+
+{% hint style="info" %}
+## Tworzenie dodatkowego portu na hostingu icehost.pl
+
+![](<../../.gitbook/assets/obraz (6).png>)
+
+<mark style="color:$danger;">Pamiętaj, podczas tworzenia portu musisz dla bezpieczeństwa twojego serwera podać port wewnętrzny!</mark>
+{% endhint %}
+{% endtab %}
+{% endtabs %}
+
+* Po skończeniu konfiguracji zrestartuj serwer&#x20;
+{% endstep %}
 {% endstepper %}
+
