@@ -8,25 +8,25 @@ description: >-
 
 {% stepper %}
 {% step %}
-### Pobranie pluginu LibreLoginProd
+### Pobranie picolimbo
 
-Pierwszym krokiem będzie pobranie pluginu LibreLoginProd.
+Pierwszym krokiem będzie pobranie picolimbo.
 
-{% embed url="https://modrinth.com/plugin/libreloginprod" %}
+{% embed url="https://modrinth.com/plugin/picolimbo-java-wrapper/versions" %}
 
-{% embed url="https://github.com/Navio1430/LibreLoginProd/releases" %}
+{% embed url="https://github.com/Quozul/PicoLimbo/releases" %}
 
 {% hint style="info" %}
-Powyżej podałem 2 linki, ponieważ plugin często na githubie ma jedną, czy kilka nowszych wersji niż na modrinthie.
+Powyżej podałem 2 linki, ponieważ picolimbo można zainstalować w formie silnika i pluginu w javie, oraz silnika w języku rust.
 {% endhint %}
 {% endstep %}
 
 {% step %}
 ### Instalacja, oraz konfiguracja PicoLimbo
 
-* Umieść plugin `LibreLoginProd` w folderze `plugins`&#x20;
+* Umieść plugin `picolimbo` w folderze `plugins`&#x20;
 * Zrestartuj serwer
-* Gdy plugin zainstaluje się na serwerze przejdź do konfguracji velocity, oraz konfiguracji pluginu i zmień poniżej wymienione opcje
+* Gdy plugin zainstaluje się na serwerze przejdź do konfguracji velocity, oraz konfiguracji pluginu i zmień poniżej wymienione opcje.
 
 {% tabs %}
 {% tab title="plugins:pico_limbo_java_wrapper/server.toml" %}
@@ -36,7 +36,7 @@ Powyżej podałem 2 linki, ponieważ plugin często na githubie ma jedną, czy k
 bind = "0.0.0.0:18000"
 [forwarding]
 method = "MODERN"
-## alternatywnie możesz podać ## secret = "${FORWARDING_SECRET}" i sprawdzić czy działa.
+## alternatywnie możesz podać secret = "${FORWARDING_SECRET}" i sprawdzić czy działa.
 secret = "twój forwarding.secret" 
 ```
 {% endcode %}
@@ -44,9 +44,9 @@ secret = "twój forwarding.secret"
 {% hint style="info" %}
 ## Tworzenie dodatkowego portu na hostingu icehost.pl
 
-<mark style="color:$danger;">Pamiętaj, podczas tworzenia portu musisz dla bezpieczeństwa twojego serwera podać port wewnętrzny!</mark>
-
 ![](<../../.gitbook/assets/obraz (6).png>)
+
+<mark style="color:$danger;">Pamiętaj, podczas tworzenia portu musisz dla bezpieczeństwa twojego serwera podać port wewnętrzny!</mark>
 {% endhint %}
 {% endtab %}
 
@@ -74,5 +74,9 @@ try = [
 {% endcode %}
 {% endtab %}
 {% endtabs %}
+
+{% hint style="warning" %}
+W przypadku picolimbo, możesz użyć go również jako silnika, wtedy instalujesz go na innym serwerze i konfigurujesz go w taki sam sposób, pamiętając o dodaniu portu wewnętrznego!
+{% endhint %}
 {% endstep %}
 {% endstepper %}
