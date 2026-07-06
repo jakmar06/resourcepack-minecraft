@@ -72,6 +72,14 @@ try = [
 ]
 ```
 {% endcode %}
+
+{% hint style="info" %}
+## Tworzenie dodatkowego portu na hostingu icehost.pl
+
+![](<../../.gitbook/assets/obraz (6).png>)
+
+<mark style="color:$danger;">Pamiętaj, podczas tworzenia portu musisz dla bezpieczeństwa twojego serwera podać port wewnętrzny!</mark>
+{% endhint %}
 {% endtab %}
 {% endtabs %}
 
