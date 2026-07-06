@@ -119,7 +119,7 @@ limbo=[
 # tutaj podajesz twoje serwery limbo, które ustawiłeś w konfiguracji velocity.
 lobby {
     root=[
-        lobby0
+        lobby
     ]
 }
 ## ta opcja odpowiada za tworzenie kont graczy, z uwierzytelnianiem hybdrydowym, czyli graczer 
@@ -172,4 +172,8 @@ try = [
 * Po skończeniu konfiguracji zrestartuj serwer&#x20;
 {% endstep %}
 {% endstepper %}
+
+{% embed url="https://builtbybit.com/resources/libreloginprod-polish-configuration.86717/" %}
+Moja publiczna konfiguracja dla pluginu LibreLoginProd
+{% endembed %}
 
