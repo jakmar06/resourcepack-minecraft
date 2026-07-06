@@ -53,7 +53,7 @@ secret = "twój forwarding.secret"
 {% tab title="velocity.toml" %}
 {% code title="home:velocity.toml" fullWidth="false" %}
 ```yaml
-## tutaj ustawiasz port dla twojego serwera
+## tutaj ustawiasz port dla twojego serwera proxy
 bind = "0.0.0.0:25565" 
 ## tutaj ustawiasz nowoczesny typ przesyłu danych "modern", który działa dla serwerów 1.13+ 
 player-info-forwarding-mode = "modern"
