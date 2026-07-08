@@ -8,172 +8,154 @@ description: >-
 
 {% stepper %}
 {% step %}
-### Pobranie picolimbo
+## LibreLoginProd (Proxy)
 
-Pierwszym krokiem będzie pobranie picolimbo.
+Kompletny poradnik konfiguracji bezpiecznej autoryzacji przy użyciu silnika/pluginu **PicoLimbo** oraz **LibreLoginProd** na proxy Velocity.
+
+***
+
+{% stepper %}
+{% step %}
+#### 1. Pobranie PicoLimbo
+
+Wybierz i pobierz odpowiednią wersję PicoLimbo dla swojego serwera.
 
 {% embed url="https://modrinth.com/plugin/picolimbo-java-wrapper/versions" %}
+Wersja jako plugin Java (Wrapper)
+{% endembed %}
 
 {% embed url="https://github.com/Quozul/PicoLimbo/releases" %}
+Wersja samodzielna (silnik w Rust lub standalone Java)
+{% endembed %}
 
 {% hint style="info" %}
-Powyżej podałem 2 linki, ponieważ picolimbo można zainstalować w formie silnika i pluginu w javie, oraz silnika w języku rust.
+**Wskazówka:** PicoLimbo możesz uruchomić na dwa sposoby: jako plugin `.jar` za pomocą Java Wrappera w folderze serwera proxy lub jako całkowicie osobny, niezależny silnik (np. napisany w Rust).
 {% endhint %}
 {% endstep %}
 
 {% step %}
-### Instalacja, oraz konfiguracja PicoLimbo
+#### 2. Instalacja i konfiguracja PicoLimbo
 
-* Umieść plugin `picolimbo` w folderze `plugins`&#x20;
-* Zrestartuj serwer
-* Gdy plugin zainstaluje się na serwerze przejdź do konfguracji velocity, oraz konfiguracji pluginu i zmień poniżej wymienione opcje.
+1. Umieść plik `picolimbo` w folderze `plugins` (lub uruchom go jako osobny proces/silnik).
+2. Zrestartuj serwer proxy, aby wygenerować niezbędne pliki konfiguracyjne.
+3. Dostosuj ustawienia w poniższych plikach konfiguracyjnych (przełącz zakładki):
 
 {% tabs %}
 {% tab title="plugins:pico_limbo_java_wrapper/server.toml" %}
-{% code title="plugins:pico_limbo_java_wrapper/server.toml" fullWidth="false" %}
 ```yaml
-## tutaj ustawiasz twój dodatkowy port dla serwera limbo
+# Twój dodatkowy port dla serwera limbo (musi być wewnętrzny!)
 bind = "0.0.0.0:18000"
+
 [forwarding]
 method = "MODERN"
-## alternatywnie możesz podać secret = "${FORWARDING_SECRET}" i sprawdzić czy działa.
-secret = "twój forwarding.secret" 
+# Alternatywnie możesz użyć: secret = "${FORWARDING_SECRET}"
+secret = "twój_forwarding_secret_z_velocity" 
 ```
-{% endcode %}
-
-{% hint style="info" %}
-## Tworzenie dodatkowego portu na hostingu icehost.pl
-
-![](<../../.gitbook/assets/obraz (6).png>)
-
-<mark style="color:$danger;">Pamiętaj, podczas tworzenia portu musisz dla bezpieczeństwa twojego serwera podać port wewnętrzny!</mark>
-{% endhint %}
 {% endtab %}
 
 {% tab title="velocity.toml" %}
-{% code title="home:velocity.toml" fullWidth="false" %}
 ```yaml
-## tutaj ustawiasz port dla twojego serwera proxy
+# Główny port serwera proxy, na który łączą się gracze
 bind = "0.0.0.0:25565" 
-## tutaj ustawiasz nowoczesny typ przesyłu danych "modern", który działa dla serwerów 1.13+ 
+
+# Nowoczesny tryb przesyłania danych (wymagany dla wersji 1.13+)
 player-info-forwarding-mode = "modern"
-## tutaj musisz wyłaczyć online mode, by gracze non premium mogli się łączyć z twoim serwerem
+
+# Wyłączenie online-mode, aby wpuścić na serwer graczy Non-Premium
 online-mode = false
 
-## Tutaj, dodajesz twoje serwery do proxy
 [servers]
+# PAMIĘTAJ: Dla bezpieczeństwa zawsze używaj portów wewnętrznych!
 limbo = "10.49.9.37:18000"
 lobby = "10.49.9.37:30066"
 
-## Tutaj podajesz serwery, na który mają się łączyć gracze po restarcie trybu, najlepiej w przypadku braku 
-## kolejki dodać tutaj sam serwer lobby, ponieważ po restarcie gracze nie będą mogli ponownie wrócic na tryb.
+# Serwer, na który gracz jest kierowany w pierwszej kolejności
 try = [
     "lobby"
 ]
 ```
-{% endcode %}
-
-{% hint style="info" %}
-## Tworzenie dodatkowego portu na hostingu icehost.pl
-
-![](<../../.gitbook/assets/obraz (6).png>)
-
-<mark style="color:$danger;">Pamiętaj, podczas tworzenia portu musisz dla bezpieczeństwa twojego serwera podać port wewnętrzny!</mark>
-{% endhint %}
 {% endtab %}
 {% endtabs %}
 
+{% hint style="danger" %}
+#### ⚠️ Ważne bezpieczeństwo (IceHost.pl i inne hostingi)
+
+Podczas tworzenia dodatkowego portu w panelu hostingu, **zawsze wybieraj port wewnętrzny!** Uniemożliwi to intruzom bezpośrednie łączenie się z Twoim serwerem Limbo/Lobby z pominięciem zabezpieczeń serwera proxy.
+{% endhint %}
+
 {% hint style="warning" %}
-W przypadku picolimbo, możesz użyć go również jako silnika, wtedy instalujesz go na innym serwerze i konfigurujesz go w taki sam sposób, pamiętając o dodaniu portu wewnętrznego!
+Jeśli decydujesz się na uruchomienie PicoLimbo jako samodzielnego silnika na osobnym serwerze, konfiguracja wygląda identycznie – musisz jedynie pamiętać o przypisaniu odpowiedniego adresu IP i wewnętrznego portu.
 {% endhint %}
 {% endstep %}
 
 {% step %}
-### Pobranie pluginu LibreLoginProd
+#### 3. Pobranie LibreLoginProd
+
+Pobierz najnowszą wersję wtyczki odpowiedzialnej za obsługę uwierzytelniania.
 
 {% embed url="https://modrinth.com/plugin/libreloginprod" %}
+Oficjalna strona na Modrinth
+{% endembed %}
 
-{% embed url="https://github.com/Navio1430/LibreLoginProd/releases/tag/0.25.10" %}
+{% embed url="https://github.com/Navio1430/LibreLoginProd/releases" %}
+GitHub Releases (często zawiera nowsze, testowe wersje rozwojowe)
+{% endembed %}
 
 {% hint style="info" %}
-Powyżej podałem 2 linki, ponieważ LibreLoginProd często na githubie ma nowszy build niż na modrinthie.
+Warto sprawdzać zakładkę _Releases_ na GitHubie autora, ponieważ tam świeże poprawki i wersje testowe pojawiają się znacznie szybciej niż na platformie Modrinth.
 {% endhint %}
 {% endstep %}
 
 {% step %}
-### Instalacja, oraz konfiguracja LibreLoginProd
+#### 4. Instalacja i konfiguracja LibreLoginProd
 
-* Umieść plugin `LibreLoginProd` w folderze `plugins`&#x20;
-* Zrestartuj serwer
-* Gdy plugin zainstaluje się na serwerze przejdź do konfguracji velocity, oraz konfiguracji pluginu i zmień poniżej wymienione opcje.
+1. Wrzuć pobrany plik `LibreLoginProd` do folderu `plugins` na swoim serwerze proxy.
+2. Wykonaj restart proxy.
+3. Skonfiguruj plik `config.conf` zgodnie z poniższym wzorem:
 
 {% tabs %}
 {% tab title="plugins:librelogin/config.conf" %}
-{% code title="plugins:librelogin/config.conf
-
-# tutaj podajesz twoje serwery limbo, które ustawiłeś w konfiguracji velocity." fullWidth="false" %}
-```yaml
+```hocon
+# Nazwa serwera Limbo zdefiniowana wcześniej w velocity.toml
 limbo=[
-    limbo
+    "limbo"
 ]
-# tutaj podajesz twoje serwery limbo, które ustawiłeś w konfiguracji velocity.
+
+# Główny serwer lobby (punkt startowy)
 lobby {
     root=[
-        lobby
+        "lobby"
     ]
 }
-## ta opcja odpowiada za tworzenie kont graczy, z uwierzytelnianiem hybdrydowym, czyli graczer 
-## premium będą mieli UUID premium, a gracze non premium będą mieli UUID non premium.
+
+# Uwierzytelnianie hybrydowe (Premium ma UUID z Mojang, Non-Premium generowane lokalnie)
 new-uuid-creator=MOJANG
 
-## ta opcja odpowiada za automatyczne rejestrowanie graczy premium.
+# Automatyczne logowanie i rejestracja dla graczy posiadających oryginalną grę
 auto-register=true
 
-## Jeżeli ta opcja jest włączona, gracze po restarcie serwera zostaną przeniesieni na serwer lobby.
+# Czy po restarcie przenosić graczy na fallback (domyślnie false - zostają na lobby)
 fallback=false 
 ```
-{% endcode %}
-{% endtab %}
-
-{% tab title="velocity.toml" %}
-{% code title="home:velocity.toml" fullWidth="false" %}
-```yaml
-## tutaj ustawiasz port dla twojego serwera proxy
-bind = "0.0.0.0:25565" 
-## tutaj ustawiasz nowoczesny typ przesyłu danych "modern", który działa dla serwerów 1.13+ 
-player-info-forwarding-mode = "modern"
-## tutaj musisz wyłaczyć online mode, by gracze non premium mogli się łączyć z twoim serwerem
-online-mode = false
-
-## Tutaj, dodajesz twoje serwery do proxy 
-## pamiętaj, by serwery miały adres wewnętrzny! 
-[servers]
-limbo = "10.49.9.37:18000"
-lobby = "10.49.9.37:30066"
-
-## Tutaj podajesz serwery, na który mają się łączyć gracze po restarcie trybu, najlepiej w przypadku braku 
-## kolejki dodać tutaj sam serwer lobby, ponieważ po restarcie gracze nie będą mogli ponownie wrócic na tryb.
-try = [
-    "lobby"
-]
-```
-{% endcode %}
-
-{% hint style="info" %}
-## Tworzenie dodatkowego portu na hostingu icehost.pl
-
-![](<../../.gitbook/assets/obraz (6).png>)
-
-<mark style="color:$danger;">Pamiętaj, podczas tworzenia portu musisz dla bezpieczeństwa twojego serwera podać port wewnętrzny!</mark>
-{% endhint %}
 {% endtab %}
 {% endtabs %}
 
-* Po skończeniu konfiguracji zrestartuj serwer&#x20;
+***
+
+#### Krok końcowy
+
+Upewnij się, że nazwy serwerów oraz porty w `velocity.toml` pokrywają się z plikiem `config.conf`, a następnie **wykonaj pełny restart serwera proxy**.
 {% endstep %}
 {% endstepper %}
 
-{% embed url="https://builtbybit.com/resources/libreloginprod-polish-configuration.86717/" %}
-Moja publiczna konfiguracja dla pluginu LibreLoginProd
-{% endembed %}
+***
 
+#### Gotowa polska konfiguracja
+
+Jeżeli nie chcesz konfigurować wszystkiego ręcznie od zera, możesz skorzystać z mojego autorskiego spolszczenia i gotowego szablonu:
+
+{% embed url="https://builtbybit.com/resources/libreloginprod-polish-configuration.86717/" %}
+Moja publiczna, gotowa konfiguracja dla LibreLoginProd (BuiltByBit)
+{% endembed %}
+{% endstep %}
+{% endstepper %}
