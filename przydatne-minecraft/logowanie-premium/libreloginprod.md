@@ -4,13 +4,13 @@ description: >-
   serwerze proxy.
 ---
 
-# LibreLoginProd (proxy)
+# LibreLoginProd
 
 {% stepper %}
 {% step %}
 ## LibreLoginProd (Proxy)
 
-Kompletny poradnik konfiguracji bezpiecznej autoryzacji przy użyciu silnika/pluginu **PicoLimbo** oraz **LibreLoginProd** na proxy Velocity.
+Kompletny poradnik konfiguracji bezpiecznej autoryzacji przy użyciu silnika/pluginu **PicoLimbo** oraz pluginu **LibreLoginProd** na proxy.
 
 ***
 
@@ -82,6 +82,8 @@ try = [
 
 Podczas tworzenia dodatkowego portu w panelu hostingu, **zawsze wybieraj port wewnętrzny!** Uniemożliwi to intruzom bezpośrednie łączenie się z Twoim serwerem Limbo/Lobby z pominięciem zabezpieczeń serwera proxy.
 {% endhint %}
+
+<figure><img src="../../.gitbook/assets/obraz (9).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 Jeśli decydujesz się na uruchomienie PicoLimbo jako samodzielnego silnika na osobnym serwerze, konfiguracja wygląda identycznie – musisz jedynie pamiętać o przypisaniu odpowiedniego adresu IP i wewnętrznego portu.
