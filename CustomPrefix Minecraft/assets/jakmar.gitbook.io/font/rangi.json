@@ -1,0 +1,32 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "jakmar.gitbook.io:rangi/root.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["ᜀ"]
+        },
+        {
+            "type": "bitmap",
+            "file": "jakmar.gitbook.io:rangi/moderator.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["ᜁ"]
+        },
+        {
+            "type": "bitmap",
+            "file": "jakmar.gitbook.io:rangi/vip.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["ᜂ"]
+        },
+        {
+            "type": "bitmap",
+            "file": "jakmar.gitbook.io:rangi/gracz.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["ᜃ"]
+        }
+    ]
+}
