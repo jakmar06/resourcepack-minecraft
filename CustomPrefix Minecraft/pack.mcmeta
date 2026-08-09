@@ -1,6 +1,23 @@
-﻿{
-    "pack": {
-        "pack_format": 21,
-        "description": "§fJakub6666 | custom prefixy"
+{
+  "pack": {
+    "pack_format": 95.0,
+    "min_format": [15, 0],
+    "max_format": [1000, 0],
+    "supported_formats": [15, 1000],
+    "description": {
+      "text": "",
+      "extra": [
+        {
+          "text": "Jakub6666 | custom prefixy\n",
+          "color": "#eb4034",
+          "bold": false
+        },
+        {
+          "text": "Zobacz: jakmar.gitbook.io",
+          "color": "#a98bf0",
+          "bold": false
+        } 
+      ]
     }
+  }
 }
