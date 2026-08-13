@@ -8,6 +8,7 @@
 
 * [Zalecane pluginy](pluginy/pluginy/README.md)
   * [Carbon Chat](pluginy/pluginy/carbon-chat.md)
+* [Nagroda discord](pluginy/nagroda-discord.md)
 
 ## Resourcepacki
 
