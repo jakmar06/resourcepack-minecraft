@@ -277,3 +277,417 @@ Aby komenda **/odbierzdiscord** działała wymagany jest pełny restart serwera,
 {% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FygQAWawEAObMdlBBqapM%2Fuploads%2F0ekDrhfIklUD1bfUb2DZ%2F2026-08-14%2021-48-49.mp4?alt=media&token=0734215a-d872-4a5e-803f-2417ddaea95f" %}
 {% endstep %}
 {% endstepper %}
+
+asdsad
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Nagroda za subskrypcję na YouTube
+
+Kompletny poradnik konfiguracji systemu, dzięki któremu gracze będą mogli odebrać nagrodę za zasubskrybowanie wskazanego kanału YouTube. Wykorzystamy do tego plugin **Claimo** oraz dodatek **ClaimoYouTubeAddon**.
+
+{% hint style="warning" %}
+**Wersja serwera oraz klienta**
+
+Poradnik został przygotowany dla wersji **1.21.7 lub nowszej**. Na starszych wersjach część funkcji, takich jak nowoczesne okna dialogowe, może być niedostępna.
+{% endhint %}
+
+***
+
+{% stepper %}
+{% step %}
+### Pobranie wymaganych pluginów
+
+Pobierz najnowszą wersję pluginu **Claimo** z jednego z poniższych źródeł:
+
+Następnie pobierz dodatek odpowiedzialny za integrację z YouTube:
+
+Umieść oba pliki `.jar` w folderze `plugins`, a następnie wykonaj pełny restart serwera.
+
+{% hint style="info" %}
+**Pierwsze uruchomienie**
+
+Po pierwszym uruchomieniu pluginy utworzą swoje foldery oraz pliki konfiguracyjne. Na razie ich nie zmieniaj — najpierw utworzymy klucz YouTube Data API.
+{% endhint %}
+{% endstep %}
+
+{% step %}
+### Google Cloud Console
+
+W tym kroku utworzymy klucz API potrzebny do automatycznego sprawdzania subskrypcji oraz komentarzy graczy.
+
+{% stepper %}
+{% step %}
+#### **Otwórz Google Cloud Console**
+
+Przejdź na stronę Google Cloud Console i zaloguj się na swoje konto Google.
+{% endstep %}
+
+{% step %}
+#### Utwórz nowy projekt
+
+Kliknij przycisk wyboru projektu zaznaczony na poniższym zrzucie ekranu.
+
+Następnie:
+
+* rozwiń sekcję **Administracja**,
+* kliknij przycisk **Utwórz projekt**.
+
+Wprowadź dowolną nazwę projektu, na przykład `Minecraft YouTube`, a następnie kliknij przycisk **Utwórz**.
+
+{% hint style="info" %}
+Po utworzeniu projektu upewnij się, że został on wybrany jako aktualnie używany projekt.
+{% endhint %}
+{% endstep %}
+
+{% step %}
+#### Tworzenie klucza API
+
+{% stepper %}
+{% step %}
+#### Otwórz bibliotekę interfejsów API
+
+Rozwiń pasek nawigacji znajdujący się w lewym górnym rogu strony.
+
+Następnie:
+
+* rozwiń sekcję **Interfejsy API i usługi**,
+* wybierz opcję **Biblioteka**.
+{% endstep %}
+
+{% step %}
+#### Włącz YouTube Data API v3
+
+W wyszukiwarce wpisz `YouTube Data API v3`, a następnie wybierz wskazany interfejs API.
+
+Kliknij przycisk <mark style="color:green;">**Włącz**</mark>.
+{% endstep %}
+
+{% step %}
+#### Utwórz dane logowania
+
+Po włączeniu YouTube Data API v3 kliknij przycisk **Utwórz dane logowania**.
+
+Jako typ używanych danych wybierz **Dane publiczne**, a następnie kliknij przycisk **Dalej**.
+
+Skopiuj wygenerowany klucz API i zachowaj go w bezpiecznym miejscu. Będzie potrzebny podczas konfiguracji dodatku.
+
+Na końcu kliknij przycisk **Gotowe**.
+
+{% hint style="danger" %}
+**Nie udostępniaj nikomu klucza API!**
+
+Klucz API pozwala korzystać z limitu zapytań przypisanego do Twojego projektu Google Cloud. Jeżeli trafi w niepowołane ręce, ktoś może wykorzystać cały dostępny limit, przez co sprawdzanie subskrypcji i komentarzy na serwerze przestanie działać.
+
+Jeżeli klucz zostanie ujawniony, usuń go w Google Cloud Console i wygeneruj nowy.
+{% endhint %}
+{% endstep %}
+{% endstepper %}
+{% endstep %}
+{% endstepper %}
+{% endstep %}
+
+{% step %}
+### Konfiguracja pluginów
+
+Po utworzeniu klucza API możemy przejść do konfiguracji **Claimo** oraz **ClaimoYouTubeAddon**.
+
+{% stepper %}
+{% step %}
+#### Konfiguracja Claimo
+
+Otwórz plik `plugins/Claimo/config.yml` i skonfiguruj poniższe opcje:
+
+{% code title="plugins/Claimo/config.yml" %}
+```yaml
+# Główna komenda pluginu służąca do odbierania nagród.
+command: kod
+
+# Lista nagród dostępna w GUI.
+# Jeżeli jej nie potrzebujesz, możesz ją wyłączyć.
+gui-list-enabled: false
+```
+{% endcode %}
+
+{% hint style="info" %}
+Wyłączenie `gui-list-enabled` nie wpływa na działanie nagród. Gracze nadal mogą odbierać je za pomocą przypisanych komend.
+{% endhint %}
+{% endstep %}
+
+{% step %}
+#### Konfiguracja ClaimoYouTubeAddon
+
+Otwórz plik `plugins/ClaimoYouTubeAddon/config.yml`.
+
+Jeżeli korzystasz z jednego serwera, możesz pozostawić zapis danych w pliku YAML. W sekcji `verifier` ustaw weryfikację przez API i wklej wcześniej wygenerowany klucz.
+
+{% code title="plugins/ClaimoYouTubeAddon/config.yml" %}
+```yaml
+# Miejsce zapisywania połączeń kont Minecraft z kanałami YouTube.
+# Przy jednym serwerze możesz pozostawić typ yaml.
+storage:
+  type: yaml
+  host: localhost
+  port: 3306
+  database: claimoyt
+  username: root
+  password: ""
+  table-prefix: claimoyt_
+  pool-size: 10
+
+# Sposób sprawdzania aktywności graczy na YouTube.
+verifier:
+  # Weryfikacja za pomocą YouTube Data API v3.
+  type: api
+
+  # Wklej tutaj klucz utworzony w Google Cloud Console.
+  api-key: "TWÓJ_KLUCZ_API"
+
+  # Maksymalna liczba stron komentarzy sprawdzanych przez plugin.
+  comment-max-pages: 5
+
+  # Wymaga potwierdzenia, że kanał naprawdę należy do gracza.
+  require-verified-ownership: true
+
+  manual:
+    # Gracz musi potwierdzić własność kanału kodem w jego opisie.
+    auto-verify-ownership: false
+```
+{% endcode %}
+
+{% hint style="info" %}
+**Co plugin może sprawdzić automatycznie?**
+
+* **Subskrypcję** — tylko jeśli gracz ma publiczną listę subskrypcji.
+* **Komentarz** — plugin może znaleźć komentarz gracza pod wskazanym filmem.
+* **Polubienie filmu** — YouTube nie udostępnia informacji o osobach, które polubiły film, dlatego polubienia zawsze wymagają ręcznego zatwierdzenia przez administrację.
+
+Jeżeli wystąpi problem z API lub gracz ma prywatne subskrypcje, weryfikacja zostanie przekazana do ręcznego zatwierdzenia.
+{% endhint %}
+
+{% hint style="warning" %}
+Nie udostępniaj publicznie pliku konfiguracyjnego, jeżeli znajduje się w nim Twój klucz API.
+{% endhint %}
+{% endstep %}
+{% endstepper %}
+{% endstep %}
+
+{% step %}
+### Konfiguracja nagrody
+
+Teraz utworzymy nagrodę, którą gracz będzie mógł odebrać po zasubskrybowaniu wskazanego kanału YouTube.
+
+{% stepper %}
+{% step %}
+#### Utwórz nową nagrodę
+
+Wpisz na serwerze komendę:
+
+```
+/claimo create
+```
+
+Następnie skonfiguruj nagrodę:
+
+* w polu **Code Name** wpisz `youtube`,
+* w polu **Command** podaj komendę wykonywaną po odebraniu nagrody,
+* pozostaw opcję **Run as console** <mark style="color:green;">włączoną</mark>,
+* opcję **Hide from list** ustaw według własnego uznania,
+* w polu **Redeem Command** wpisz `odbierzyoutube`,
+* w polu **Max Uses** ustaw `1`,
+* <mark style="color:green;">włącz</mark> opcję **Limit is per player**.
+{% endstep %}
+
+{% step %}
+#### Dodaj wymaganie subskrypcji
+
+Dodaj do nagrody wymaganie:
+
+```
+youtube_subscribe
+```
+
+W polu `target` podaj kanał, który gracz ma zasubskrybować. Możesz użyć:
+
+* pełnego adresu kanału,
+* nazwy kanału rozpoczynającej się od `@`,
+* identyfikatora kanału rozpoczynającego się od `UC`.
+
+Przykładowy adres:
+
+```
+https://www.youtube.com/@twojkanal
+```
+
+{% hint style="info" %}
+ClaimoYouTubeAddon udostępnia również wymagania `youtube_comment` oraz `youtube_like`. W ich przypadku jako `target` podaj adres odpowiedniego filmu.
+{% endhint %}
+{% endstep %}
+
+{% step %}
+#### Gotowy plik nagrody
+
+Po zapisaniu nagrody jej plik powinien wyglądać podobnie do poniższego:
+
+{% code title="plugins/Claimo/vouchers/youtube.yml" %}
+```yaml
+# Komenda wykonywana po odebraniu nagrody.
+cmd: say %player_name% odebrał nagrodę za subskrypcję!
+
+# Osobna komenda służąca do odebrania tej nagrody.
+redeem-command: odbierzyoutube
+
+# Wykonuje komendę jako konsola.
+console: true
+
+# Ukrywa nagrodę na liście dostępnych kodów.
+hide: true
+
+# Każdy gracz może odebrać nagrodę tylko jeden raz.
+limit:
+  mode: per-player
+  amount: 1
+
+# Gracz musi zasubskrybować wskazany kanał.
+requirements:
+  - type: youtube_subscribe
+    target: "https://www.youtube.com/@twojkanal"
+```
+{% endcode %}
+
+{% hint style="warning" %}
+Jeżeli nie możesz ustawić jednego użycia za pomocą kreatora, zatrzymaj serwer i zmień wartość `amount` na `1` bezpośrednio w pliku nagrody.
+{% endhint %}
+{% endstep %}
+
+{% step %}
+#### Zrestartuj serwer
+
+Po zapisaniu konfiguracji wykonaj pełny restart serwera.
+
+{% hint style="info" %}
+Pełny restart jest wymagany, aby plugin zarejestrował komendę `/odbierzyoutube`. Przed restartem nagrodę można nadal odebrać główną komendą `/kod youtube`.
+{% endhint %}
+{% endstep %}
+{% endstepper %}
+{% endstep %}
+
+{% step %}
+### Połączenie kanału YouTube przez gracza
+
+Każdy gracz musi połączyć swoje konto Minecraft z własnym kanałem YouTube.
+
+{% stepper %}
+{% step %}
+#### Połącz kanał
+
+Gracz powinien wpisać:
+
+```
+/youtube link @nazwa_kanalu
+```
+
+Zamiast `@nazwa_kanalu` może również wkleić pełny adres swojego kanału YouTube.
+
+Plugin wygeneruje jednorazowy kod weryfikacyjny, na przykład:
+
+```
+YT-ABC123
+```
+{% endstep %}
+
+{% step %}
+#### Dodaj kod do opisu kanału
+
+Skopiuj otrzymany kod i dodaj go do opisu swojego kanału YouTube.
+
+Po zapisaniu zmian wróć na serwer i wpisz:
+
+```
+/youtube verify
+```
+
+Plugin sprawdzi opis kanału i potwierdzi, że należy on do gracza.
+
+{% hint style="info" %}
+Po poprawnym zweryfikowaniu kanału kod można usunąć z jego opisu.
+{% endhint %}
+{% endstep %}
+
+{% step %}
+#### Ustaw subskrypcje jako publiczne
+
+Aby plugin mógł automatycznie sprawdzić subskrypcję, lista subskrybowanych kanałów gracza musi być publiczna.
+
+Jeżeli subskrypcje są prywatne, plugin nie będzie mógł potwierdzić ich przez YouTube Data API i konieczne będzie ręczne zatwierdzenie przez administratora.
+{% endstep %}
+{% endstepper %}
+{% endstep %}
+
+{% step %}
+### Sprawdzenie działania nagrody
+
+Na koniec sprawdź cały proces z konta gracza:
+
+1. Wpisz `/youtube link @nazwa_kanalu`, aby połączyć kanał.
+2. Dodaj otrzymany kod do opisu kanału.
+3. Wpisz `/youtube verify`, aby potwierdzić własność kanału.
+4. Zasubskrybuj kanał wskazany w konfiguracji nagrody.
+5. Upewnij się, że lista subskrypcji jest publiczna.
+6. Wpisz `/odbierzyoutube`.
+
+Jeżeli wszystkie wymagania zostały spełnione, plugin wykona komendę przypisaną do nagrody.
+
+{% hint style="warning" %}
+YouTube może potrzebować chwili na zaktualizowanie informacji o subskrypcji. Jeżeli nagroda nie zostanie przyznana od razu, odczekaj chwilę i spróbuj ponownie.
+{% endhint %}
+{% endstep %}
+{% endstepper %}
+
+***
