@@ -73,8 +73,6 @@ Kliknij przycisk "nowa aplikacja"\
 
 {% step %}
 ### Zakładka bot
-
-{% embed url="https://2800890937-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FygQAWawEAObMdlBBqapM%2Fuploads%2FMvWlH1eMHy5qNbJD6dvl%2F2026-08-09%2011-09-43.mp4?alt=media&token=bbc1583a-9c32-421a-ac79-0d7dc06a216d" %}
 {% endstep %}
 
 {% step %}
