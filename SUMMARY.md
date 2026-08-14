@@ -8,7 +8,8 @@
 
 * [Zalecane pluginy](pluginy/pluginy/README.md)
   * [Carbon Chat](pluginy/pluginy/carbon-chat.md)
-* [Nagroda za dołączenie na Discorda](pluginy/nagroda-discord.md)
+* [Claimo](pluginy/claimo/README.md)
+  * [Nagroda za dołączenie na Discorda](pluginy/claimo/nagroda-discord.md)
 * [Logowanie Premium](pluginy/logowanie-premium/README.md)
   * [LibreLoginProd](pluginy/logowanie-premium/libreloginprod.md)
 
