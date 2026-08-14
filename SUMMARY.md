@@ -30,3 +30,4 @@
   * [Gdy posiadasz serwer zarządzany z dedykowanym ip](przydatne-minecraft/domena-mc/rekord-cname.md)
   * [Gdy posiadasz VPS/DEDYKA](przydatne-minecraft/domena-mc/rekord-a.md)
   * [Gdy posiadasz serwer zarządzany z współdzielonym ip](przydatne-minecraft/domena-mc/rekord-srv.md)
+  * [linki](przydatne-minecraft/domena-mc/linki.md)

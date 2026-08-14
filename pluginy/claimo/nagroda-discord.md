@@ -289,3 +289,11 @@ Aby komenda **/odbierzdiscord** działała wymagany jest pełny restart serwera,
 {% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FygQAWawEAObMdlBBqapM%2Fuploads%2F0ekDrhfIklUD1bfUb2DZ%2F2026-08-14%2021-48-49.mp4?alt=media&token=0734215a-d872-4a5e-803f-2417ddaea95f" %}
 {% endstep %}
 {% endstepper %}
+
+{% embed url="https://claimo.vao.zone/start/introduction/" %}
+oficjalna dokumentacja pluginu
+{% endembed %}
+
+{% embed url="https://discord.com/invite/Q5FudY755V" %}
+oficjalny support pluginu
+{% endembed %}

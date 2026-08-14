@@ -1,0 +1,3 @@
+# linki
+
+<table data-view="cards"><thead><tr><th>Title</th><th>Description</th><th data-card-target data-type="content-ref">Link</th><th>Image</th></tr></thead><tbody><tr><td><strong>Wiki</strong></td><td>Dokumentacja i poradniki.</td><td><a href="https://claimo.vao.zone/start/introduction/">https://claimo.vao.zone/start/introduction/</a></td><td><a href="https://builtbybit.com/attachments/wiki-png.1405357/?preset=fullr1">Wiki</a></td></tr><tr><td><strong>Discord</strong></td><td>Dołącz do naszej społeczności.</td><td><a href="https://discord.gg/Q5FudY755V">https://discord.gg/Q5FudY755V</a></td><td><a href="https://builtbybit.com/attachments/discord-png.1405358/?preset=fullr1">Discord</a></td></tr></tbody></table>
