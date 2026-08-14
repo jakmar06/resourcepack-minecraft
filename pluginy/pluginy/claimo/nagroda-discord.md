@@ -58,7 +58,7 @@ Przejdź na stronę Discord Developer Portal i zaloguj się na swoje konto Disco
 
 *   Kliknij przycisk **Nowa Aplikacja**.<br>
 
-    <figure><img src="../../.gitbook/assets/obraz (10).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/obraz (10).png" alt=""><figcaption></figcaption></figure>
 
 **Następnie:**
 
@@ -67,7 +67,7 @@ Przejdź na stronę Discord Developer Portal i zaloguj się na swoje konto Disco
 * Zaakceptuj regulamin Discorda.
 * Kliknij przycisk **Stwórz**.
 
-<figure><img src="../../.gitbook/assets/obraz (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/obraz (11).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -81,11 +81,11 @@ Po utworzeniu aplikacji przejdź do zakładki **Instalacja**.
 
 * Ustaw możliwość instalowania bota wyłącznie na serwerach Discord.
 
-<figure><img src="../../.gitbook/assets/obraz (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/obraz (12).png" alt=""><figcaption></figcaption></figure>
 
 * Następnie wyłącz publiczny link instalacyjny widoczny na profilu bota.
 
-<figure><img src="../../.gitbook/assets/obraz (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/obraz (14).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -98,7 +98,7 @@ Przejdź do zakładki **Bot** i ustaw następujące opcje:
 * <mark style="color:green;">Włącz</mark> opcję **Intent dot. członków serwera.**
 * <mark style="color:green;">Włącz</mark> opcję **Intent dot. treści wiadomości.**
 
-<figure><img src="../../.gitbook/assets/obraz (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/obraz (15).png" alt=""><figcaption></figcaption></figure>
 
 #### **Wygeneruj token bota**
 
@@ -106,7 +106,7 @@ W zakładce **Bot** znajdź sekcję **Token**, a następnie kliknij przycisk **R
 
 * Skopiuj wygenerowany token i zachowaj go w bezpiecznym miejscu. Będzie potrzebny podczas konfiguracji pluginu.
 
-<figure><img src="../../.gitbook/assets/obraz (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/obraz (16).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="danger" %}
 #### **Nie udostępniaj nikomu tokenu bota!**
@@ -130,7 +130,7 @@ Jeżeli token zostanie ujawniony, natychmiast wygeneruj nowy za pomocą przycisk
 
 W zakładce **OAuth2** znajdź sekcję **Generator adresu URL OAuth2,** a następnie kliknij okienko **BOT.**
 
-<figure><img src="../../.gitbook/assets/obraz (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/obraz (18).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 #### **Uprawnienia bota**
@@ -142,7 +142,7 @@ Możesz przypisać również tutaj uprawnienia, jakie bot będzie mial po dołą
 {% step %}
 ### Skopiuj poniżej wygenerowany link
 
-<figure><img src="../../.gitbook/assets/obraz (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/obraz (19).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -150,7 +150,7 @@ Możesz przypisać również tutaj uprawnienia, jakie bot będzie mial po dołą
 
 Otwórz link w nowej karcie, oraz wybierz serwer na ktory ma zostać dodany bot
 
-<figure><img src="../../.gitbook/assets/obraz (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/obraz (20).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 {% endstepper %}
 {% endstep %}
@@ -219,11 +219,11 @@ Nie udostępniaj publicznie pliku konfiguracyjnego, jeżeli znajduje się w nim 
 
 * Wpisz komendę **/nagrodadiscord panel**
 
-<figure><img src="../../.gitbook/assets/obraz (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/obraz (21).png" alt=""><figcaption></figcaption></figure>
 
 * Sprawdź, czy bot wysłał wiadomość na kanał
 
-<figure><img src="../../.gitbook/assets/obraz (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/obraz (22).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -289,6 +289,8 @@ Aby komenda **/odbierzdiscord** działała wymagany jest pełny restart serwera,
 {% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FygQAWawEAObMdlBBqapM%2Fuploads%2F0ekDrhfIklUD1bfUb2DZ%2F2026-08-14%2021-48-49.mp4?alt=media&token=0734215a-d872-4a5e-803f-2417ddaea95f" %}
 {% endstep %}
 {% endstepper %}
+
+***
 
 {% embed url="https://claimo.vao.zone/start/introduction/" %}
 oficjalna dokumentacja pluginu
