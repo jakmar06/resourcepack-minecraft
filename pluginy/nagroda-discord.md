@@ -10,7 +10,7 @@ icon: discord
 
 {% stepper %}
 {% step %}
-### Pobranie pluginów
+## Pobranie pluginów
 
 Pierwszym krokiem będzie pobranie potrzebnych pluginów, w tym celu będziesz musiał pobrać plugin claimo, oraz Claimo Discord addon.
 
@@ -20,7 +20,7 @@ Pierwszym krokiem będzie pobranie potrzebnych pluginów, w tym celu będziesz m
 {% endstep %}
 
 {% step %}
-### Stworzenie bota
+## Discord Developers
 
 Drugim krokiem będzie stworzenie bota na stronie discorda
 
@@ -32,18 +32,18 @@ Drugim krokiem będzie stworzenie bota na stronie discorda
 {% endstep %}
 
 {% step %}
-#### Stwórz konto bota
+### Stwórz konto bota
 
 {% stepper %}
 {% step %}
-### Nowa aplikacja
+#### Nowa aplikacja
 
 Kliknij przycisk "nowa aplikacja"\
 ![](<../.gitbook/assets/obraz (10).png>)
 {% endstep %}
 
 {% step %}
-### Stwórz nową aplikacje
+#### Stwórz nową aplikacje
 
 * Nazwij swojego bota
 * Wybierz zespół w którym ma się znajdować, np "Minecraf wiki" (o ile taki zespół wcześniej utworzyłeś)
@@ -60,7 +60,7 @@ Kliknij przycisk "nowa aplikacja"\
 
 {% stepper %}
 {% step %}
-### Zakładka instalacja
+#### Zakładka instalacja
 
 * Zaznacz, by bot mógł być zainstalowany tylko na serwerach
 
@@ -72,7 +72,7 @@ Kliknij przycisk "nowa aplikacja"\
 {% endstep %}
 
 {% step %}
-### Zakładka bot&#x20;
+#### Zakładka bot&#x20;
 
 * <mark style="color:red;">Wyłącz opcję</mark> "Publiczny bot"&#x20;
 * <mark style="color:green;">Włącz opcję</mark> "Uprawnienie intent dot. obecności"
@@ -94,9 +94,13 @@ Jeżeli token bota wycieknie, oraz dostanie go nieodpowiednia osoba otrzyma peł
 {% endhint %}
 {% endstep %}
 {% endstepper %}
-
-
 {% endstep %}
 {% endstepper %}
+{% endstep %}
+
+{% step %}
+## Konfiguracja pluginu
+
+
 {% endstep %}
 {% endstepper %}
