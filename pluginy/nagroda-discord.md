@@ -121,27 +121,153 @@ Jeżeli token zostanie ujawniony, natychmiast wygeneruj nowy za pomocą przycisk
 {% endstep %}
 {% endstepper %}
 {% endstep %}
+
+{% step %}
+### Zaproszenie bota
+
+{% stepper %}
+{% step %}
+### Stworzenie linku z zaproszeniem
+
+W zakładce **OAuth2** znajdź sekcję **Generator adresu URL OAuth2,** a następnie kliknij okienko **BOT.**
+
+<figure><img src="../.gitbook/assets/obraz (18).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="warning" %}
+#### **Uprawnienia bota**
+
+Możesz przypisać również tutaj uprawnienia, jakie bot będzie mial po dołączeniu na serwer według własnego uznanania, ja zalecam nie dodawania tutaj uprawnień administratora.
+{% endhint %}
+{% endstep %}
+
+{% step %}
+### Skopiuj poniżej wygenerowany link
+
+<figure><img src="../.gitbook/assets/obraz (19).png" alt=""><figcaption></figcaption></figure>
+{% endstep %}
+
+{% step %}
+### Dodanie bota na serwer
+
+Otwórz link w nowej karcie, oraz wybierz serwer na ktory ma zostać dodany bot
+
+<figure><img src="../.gitbook/assets/obraz (20).png" alt=""><figcaption></figcaption></figure>
+{% endstep %}
+{% endstepper %}
+{% endstep %}
 {% endstepper %}
 {% endstep %}
 
 {% step %}
-### Konfiguracja pluginów
+### Konfiguracja Claimo
 
-Po utworzeniu i skonfigurowaniu bota możesz przejść do konfiguracji **ClaimoDiscordAddon**.
+{% stepper %}
+{% step %}
+### Konfiguracja Claimo w plikach
 
-Otwórz folder pluginu utworzony po pierwszym uruchomieniu serwera, a następnie przejdź do jego pliku konfiguracyjnego.
+Skonfiguruj poniżej wymienione opcje, tak jak to jest podane niżej.
 
-W konfiguracji należy:
+{% tabs %}
+{% tab title="plugins:Claimo/config.yml" %}
+```yaml
+# Komenda z pluginu Claimo odpowiadająca za kody
+command: kod
 
-1. wkleić wcześniej skopiowany token bota,
-2. podać identyfikator serwera Discord,
-3. skonfigurować wymaganą rolę lub kanał,
-4. ustawić nagrodę przyznawaną graczowi,
-5. zapisać zmiany i wykonać pełny restart serwera.
+# Opcja odpowiadająza za gui z dostepnymi kodami, ja zalecam jej wyłaczenie,
+# ale samo jej ustawienienie nie ma żadnego wpływu na działanie pluginu.
+gui-list-enabled: false
+```
+{% endtab %}
+
+{% tab title="plugins:ClaimoDiscordAddon/config.yml" %}
+```yaml
+# Komenda z pluginu odpowiadająca za zarządzanie swoim połączeniem z discordem.
+command: nagrodadiscord
+
+bot:
+  # Twój token bota, który zapisałeś wcześniej.
+  token: "MTUzNzg1ODgwMjI1NzM3MTMyMA.GjowV7.6yogdr8JxESuggeSOppO0yCo0PQORgctfiaJ0w"
+  # ID twojego serwera discord.
+  guild-id: "877884416066727946"
+ # Dodatkowe uprawnienia określające, jakie informacje bot może odczytywać
+ # z Twojego serwera Discord. Wyłączenie ich może sprawić, że niektóre wymagania,
+ # np. sprawdzanie statusu użytkownika, jego ról lub boosta serwera, nie będą działać.
+  intents:
+    # Pozwala botowi sprawdzać statusy użytkowników.
+    presences: true
+    # Pozwala botowi sprawdzać członków serwera, ich role i ulepszenia serwera.
+    members: true
+
+discord:
+  # Kanał na który ma być wysyłana wiadomość z przyciskiem do połączenia
+  # konta discord z kontem minecraft.
+  panel-channel-id: "1537892477753761862"
+```
 
 {% hint style="warning" %}
 Nie udostępniaj publicznie pliku konfiguracyjnego, jeżeli znajduje się w nim token bota.
 {% endhint %}
+{% endtab %}
+{% endtabs %}
+{% endstep %}
+
+{% step %}
+### Konfiguracja Claimo w Minecraft
+
+{% stepper %}
+{% step %}
+### Wysłanie panelu z przyciskiem na discorda
+
+* Wpisz komendę **/nagrodadiscord panel**
+
+<figure><img src="../.gitbook/assets/obraz (21).png" alt=""><figcaption></figcaption></figure>
+
+* Sprawdź, czy bot wysłał wiadomość na kanał
+
+<figure><img src="../.gitbook/assets/obraz (22).png" alt=""><figcaption></figcaption></figure>
+{% endstep %}
+
+{% step %}
+### Konfiguracja nagrody
+
+* Wpisz komendę **/claimo create**
+* W polu **Code Name** wpisz **discord**
+* W polu **Command,** wpisz komendę jaka ma zostać wykonana podczas odbierania nagrody
+* Pozostaw opcję Run as console <mark style="color:green;">Włączoną</mark>
+* Opcję **Hide from list** ustaw wedle swojego uznania (wyłączone nie będzie tabować tej nagrody pod komendą /kod discord)
+* W polu Reedem **Command** wpisz **/odbierzdiscord**
+* Ustaw ile razy chcesz by gracz mógł odebrać tą nagrodą pod opcją **Max Uses**
+
+{% hint style="warning" %}
+Czasem może pojawić się problem z wybraniem 1, jeżeli taki problem wystąpi możesz tą opcję zmienić w configu pluginu Claimo.
+
+{% code title="plugins:Claimo/vouchers/discord.yml" %}
+```yml
+cmd: say UDAŁO CI SIĘ ODEBRAĆ NAGRODE %player_name%
+redeem-command: odbierzdiscord
+console: true
+hide: true
+limit:
+  mode: per-player
+  amount: 1
+requirements:
+- type: discord_linked
+- type: discord_member
+```
+{% endcode %}
+{% endhint %}
+
+* <mark style="color:green;">Włącz</mark> opcję **Limit is per player**
+* <mark style="color:green;">Włącz</mark> opcję discord\_linked
+* <mark style="color:green;">Włącz</mark> opcję discord\_member
+
+{% hint style="info" %}
+Możesz też dodać różne wymagania, np posiadanie boosta na discordzie, czy czas w którym się jest na discordzie/przegrany czas na serwerze, ale to już ustawiasz wedle swojego uznania.
+{% endhint %}
+{% endstep %}
+{% endstepper %}
+{% endstep %}
+{% endstepper %}
 {% endstep %}
 {% endstepper %}
 
