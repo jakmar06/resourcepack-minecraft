@@ -25,6 +25,8 @@ Poradnik jest tworzony na wersji 1.21.7+ dla serwera, oraz klienta, używanie ni
 
 {% embed url="https://builtbybit.com/resources/claimo.115049/history" %}
 
+{% embed url="https://modrinth.com/plugin/claimo/versions" %}
+
 {% embed url="https://github.com/Naimadx123/ClaimoDiscordAddon/releases" %}
 
 * Umieść oba pliki `.jar` w folderze `plugins`, a następnie wykonaj pełny restart serwera.
