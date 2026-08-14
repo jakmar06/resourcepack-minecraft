@@ -9,6 +9,8 @@
 * [Zalecane pluginy](pluginy/pluginy/README.md)
   * [Carbon Chat](pluginy/pluginy/carbon-chat.md)
 * [Nagroda discord](pluginy/nagroda-discord.md)
+* [Logowanie Premium](pluginy/logowanie-premium/README.md)
+  * [LibreLoginProd](pluginy/logowanie-premium/libreloginprod.md)
 
 ## Resourcepacki
 
@@ -23,8 +25,6 @@
 * [Często zadawane pytania](przydatne-minecraft/pytania.md)
 * [Konfiguracja Serwera Proxy](przydatne-minecraft/konfiguracja-serwera-proxy.md)
 * [Gamerule minecraft (26.1.2)](przydatne-minecraft/gamerule.md)
-* [Logowanie Premium](przydatne-minecraft/logowanie-premium/README.md)
-  * [LibreLoginProd](przydatne-minecraft/logowanie-premium/libreloginprod.md)
 * [Podłączenie domeny do serwera minecraft](przydatne-minecraft/domena-mc/README.md)
   * [Gdy posiadasz serwer zarządzany z dedykowanym ip](przydatne-minecraft/domena-mc/rekord-cname.md)
   * [Gdy posiadasz VPS/DEDYKA](przydatne-minecraft/domena-mc/rekord-a.md)
