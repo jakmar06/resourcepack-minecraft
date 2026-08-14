@@ -9,6 +9,12 @@ icon: discord
 
 # Nagroda za dołączenie na Discorda
 
+{% hint style="warning" %}
+#### **Wersja serwera oraz klienta**
+
+Poradnik jest tworzony na wersji 1.21.7+ dla serwera, oraz klienta, używanie niższej wersji jest nie zalecane!
+{% endhint %}
+
 ***
 
 {% stepper %}
@@ -70,7 +76,7 @@ Przejdź na stronę Discord Developer Portal i zaloguj się na swoje konto Disco
 {% step %}
 ### **Skonfiguruj instalację bota**
 
-Po utworzeniu aplikacji przejdź do zakładki **Installation**.
+Po utworzeniu aplikacji przejdź do zakładki **Instalacja**.
 
 * Ustaw możliwość instalowania bota wyłącznie na serwerach Discord.
 
@@ -86,10 +92,10 @@ Po utworzeniu aplikacji przejdź do zakładki **Installation**.
 
 Przejdź do zakładki **Bot** i ustaw następujące opcje:
 
-* <mark style="color:red;">Wyłącz</mark> opcję **Public Bot**.
-* <mark style="color:green;">Włącz</mark> opcję **Presence Intent**.
-* <mark style="color:green;">Włącz</mark> opcję **Server Members Intent**.
-* <mark style="color:green;">Włącz</mark> opcję **Message Content Intent**.
+* <mark style="color:red;">Wyłącz</mark> opcję **Publiczny bot.**
+* <mark style="color:green;">Włącz</mark> opcję **Intent dot. obecności**.
+* <mark style="color:green;">Włącz</mark> opcję **Intent dot. członków serwera.**
+* <mark style="color:green;">Włącz</mark> opcję **Intent dot. treści wiadomości.**
 
 <figure><img src="../.gitbook/assets/obraz (15).png" alt=""><figcaption></figcaption></figure>
 
@@ -106,7 +112,7 @@ W zakładce **Bot** znajdź sekcję **Token**, a następnie kliknij przycisk **R
 
 Jeżeli token bota wycieknie i otrzyma go niepowołana osoba, może ona przejąć kontrolę nad botem oraz wykorzystać wszystkie przypisane mu uprawnienia.
 
-Jeżeli token zostanie u
+Jeżeli token zostanie ujawniony, natychmiast wygeneruj nowy za pomocą przycisku **Zresetuj Token**.
 {% endhint %}
 {% endstep %}
 {% endstepper %}
@@ -117,7 +123,7 @@ Jeżeli token zostanie u
 {% endstep %}
 
 {% step %}
-### Konfiguracja pluginu
+### Konfiguracja pluginów
 
 Po utworzeniu i skonfigurowaniu bota możesz przejść do konfiguracji **ClaimoDiscordAddon**.
 
