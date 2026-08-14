@@ -74,9 +74,15 @@ Kliknij przycisk "nowa aplikacja"\
 {% step %}
 ### Zakładka bot
 
+{% file src="../.gitbook/assets/2026-08-09 11-09-43.mp4" %}
 
 
-<figure><img src="../.gitbook/assets/cat-dance-cat.gif" alt=""><figcaption></figcaption></figure>
+{% endstep %}
+
+{% step %}
+
+
+
 {% endstep %}
 {% endstepper %}
 
