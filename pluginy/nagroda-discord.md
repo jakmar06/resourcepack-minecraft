@@ -261,8 +261,16 @@ requirements:
 * <mark style="color:green;">Włącz</mark> opcję discord\_linked
 * <mark style="color:green;">Włącz</mark> opcję discord\_member
 
+[https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FygQAWawEAObMdlBBqapM%2Fuploads%2Fdi0WV1yOfUDhjnqydTA6%2F2026-08-14%2021-34-07.mp4?alt=media\&token=aba4076e-a6f4-44fc-a5e7-7d3ea96b4fc4](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FygQAWawEAObMdlBBqapM%2Fuploads%2Fdi0WV1yOfUDhjnqydTA6%2F2026-08-14%2021-34-07.mp4?alt=media\&token=aba4076e-a6f4-44fc-a5e7-7d3ea96b4fc4)
+
 {% hint style="info" %}
 Możesz też dodać różne wymagania, np posiadanie boosta na discordzie, czy czas w którym się jest na discordzie/przegrany czas na serwerze, ale to już ustawiasz wedle swojego uznania.
+{% endhint %}
+
+* Zrestartuj serwer&#x20;
+
+{% hint style="info" %}
+Aby komenda **/odbierzdiscord** działała wymagany jest pełny restart serwera, bez restartu można użyć komendy **/kod discord**
 {% endhint %}
 {% endstep %}
 {% endstepper %}
