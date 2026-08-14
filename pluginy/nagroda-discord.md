@@ -46,7 +46,7 @@ Kliknij przycisk "nowa aplikacja"\
 #### Stwórz nową aplikacje
 
 * Nazwij swojego bota
-* Wybierz zespół w którym ma się znajdować, np "Minecraf wiki" (o ile taki zespół wcześniej utworzyłeś)
+* Wybierz zespół w którym ma się znajdować, np "Minecraft wiki" (o ile taki zespół wcześniej utworzyłeś)
 * Zaakceptuj zasady dotyczące aplikacji&#x20;
 * Kliknij przycisk stwórz
 
