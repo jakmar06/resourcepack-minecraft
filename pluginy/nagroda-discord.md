@@ -72,13 +72,26 @@ Kliknij przycisk "nowa aplikacja"\
 {% endstep %}
 
 {% step %}
-### Zakładka bot
-{% endstep %}
+### Zakładka bot&#x20;
 
-{% step %}
+* <mark style="color:red;">Wyłącz opcję</mark> "Publiczny bot"&#x20;
+* <mark style="color:green;">Włącz opcję</mark> "Uprawnienie intent dot. obecności"
+* <mark style="color:green;">Włącz opcję</mark> "Uprawnienie intent dot. członków serwera"
+* <mark style="color:green;">Włącz opcję</mark> "Uprawnienie intent dot. treści wiadomości"
 
+<figure><img src="../.gitbook/assets/obraz (15).png" alt=""><figcaption></figcaption></figure>
 
+* Zresetuj token bota
 
+<figure><img src="../.gitbook/assets/obraz (16).png" alt=""><figcaption></figcaption></figure>
+
+* Skopiuj token bota i zachowaj go w bezpieczym miejscu na później
+
+{% hint style="danger" %}
+#### Nie udostępniaj nikomu tokenu bota!
+
+Jeżeli token bota wycieknie, oraz dostanie go nieodpowiednia osoba otrzyma pełen dostęp do twojego serwera discord! Dla bezpieczeństwa zalecane jest ustawienie tylko niezbędnych uprawień w ustawieniach roli na discordzie.
+{% endhint %}
 {% endstep %}
 {% endstepper %}
 
