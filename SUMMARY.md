@@ -6,11 +6,11 @@
 
 ## Pluginy
 
-* [Zalecane pluginy](pluginy/pluginy/README.md)
-  * [Carbon Chat](pluginy/pluginy/carbon-chat.md)
-  * [Claimo](pluginy/pluginy/claimo/README.md)
-    * [Nagroda za dołączenie na Discorda](pluginy/pluginy/claimo/nagroda-discord.md)
-    * [Nagroda za subskrybcje na youtube](pluginy/pluginy/claimo/nagroda-za-subskrybcje-na-youtube.md)
+* [Zalecane pluginy](pluginy/zalecane-pluginy/README.md)
+  * [Carbon Chat](pluginy/zalecane-pluginy/carbon-chat.md)
+  * [Claimo](pluginy/zalecane-pluginy/claimo/README.md)
+    * [Nagroda za dołączenie na Discorda](pluginy/zalecane-pluginy/claimo/nagroda-discord.md)
+    * [Nagroda za subskrybcje na youtube](pluginy/zalecane-pluginy/claimo/nagroda-za-subskrybcje-na-youtube.md)
 * [Logowanie Premium](pluginy/logowanie-premium/README.md)
   * [LibreLoginProd](pluginy/logowanie-premium/libreloginprod.md)
 
